@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleImage="http://schemas.android.com/apk/res/air.com.shuangge.phone.ShuangEnglish"
+    xmlns:jattrs="http://schemas.android.com/apk/res/air.com.shuangge.phone.ShuangEnglish"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#e8e8e8" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2px"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:background="#f5f5f5"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:paddingBottom="20dp" >
+
+        <com.shuangge.english.view.component.CircleImageView
+            android:id="@+id/imgHead"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/fl1"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="10dp"
+            CircleImage:circleImage="@drawable/head_male"
+            android:src="@drawable/head_male" />
+
+        <TextView
+            android:id="@+id/txtCreateDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtName"
+            android:layout_below="@+id/txtName"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="10分钟前 | "
+            android:textColor="#b5b5b5"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/txtReplyNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtCreateDate"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@+id/txtCreateDate"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="441评论"
+            android:textColor="#b5b5b5"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgHead"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="150dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@+id/imgHead"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="爽友456456"
+            android:textColor="@color/black"
+            android:textSize="12dp" />
+
+        <FrameLayout
+            android:id="@+id/flNiceNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imgHead"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/bg_nice" >
+
+            <TextView
+                android:id="@+id/txtNiceNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="9dp"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="10dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/fl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rlWritePost"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp" >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_item_post" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="27dp"
+                android:paddingLeft="17dp"
+                android:paddingRight="17dp"
+                android:paddingTop="17dp" >
+
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:gravity="left|top"
+                    android:singleLine="true"
+                    android:text="title"
+                    android:textColor="#1a1a1a"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtContent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtTitle"
+                    android:layout_marginTop="8dp"
+                    android:ellipsize="end"
+                    android:gravity="left|top"
+                    android:lineSpacingExtra="4dp"
+                    android:maxLines="6"
+                    android:text="sdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdfsdafasdfasdfasdf"
+                    android:textColor="#5c5c5c"
+                    android:textSize="14dp" />
+
+                <ImageView
+                    android:id="@+id/imgTop"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignRight="@+id/txtTitle"
+                    android:layout_alignTop="@+id/txtTitle"
+                    android:src="@drawable/icon_top" />
+
+                <com.shuangge.english.view.component.MaskImage
+                    android:id="@+id/imgFirst"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_alignLeft="@+id/txtContent"
+                    android:layout_below="@+id/txtContent"
+                    android:layout_marginTop="8dp"
+                    android:paddingBottom="7dp"
+                    jattrs:image="@drawable/head_male"
+                    jattrs:imageHeight="90dp"
+                    jattrs:imageWidth="90dp"
+                    jattrs:mask="@drawable/bg_head" />
+            </RelativeLayout>
+        </FrameLayout>
+    </RelativeLayout>
+
+</FrameLayout>

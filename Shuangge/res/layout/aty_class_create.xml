@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titlebar="http://schemas.android.com/apk/res/air.com.shuangge.phone.ShuangEnglish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.shuangge.english.view.component.ComponentTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:save="true"
+        titlebar:titleStrCn="@string/classCreateTitleCn"
+        titlebar:titleStrEn="@string/classCreateTitleEn" />
+
+    <com.shuangge.english.view.component.photograph.MyScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" >
+
+            <RelativeLayout
+                android:id="@+id/rl1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/s_border_bottom"
+                android:paddingBottom="20dp" >
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/classEditTip2"
+                    android:textColor="@color/input_title"
+                    android:textSize="14dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_input" />
+
+                    <EditText
+                        android:id="@+id/classEditTip1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="text"
+                        android:maxLength="@integer/inputClassTitleMax"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/default_content"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/s_border_bottom"
+                android:paddingBottom="20dp" >
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/classEditTip3"
+                    android:textColor="@color/input_title"
+                    android:textSize="14dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_input" />
+
+                    <EditText
+                        android:id="@+id/classEditTip2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="textMultiLine"
+                        android:maxLength="@integer/inputClassSignatureMax"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text=""
+                        android:textColor="@color/default_content"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/s_border_bottom"
+                android:paddingBottom="20dp" >
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/classEditTip1"
+                    android:textColor="@color/input_title"
+                    android:textSize="14dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_input" />
+
+                    <TextView
+                        android:id="@+id/classEditTip3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:gravity="center"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text=""
+                        android:textColor="@color/default_content"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/s_border_bottom"
+                android:paddingBottom="20dp" >
+
+                <TextView
+                    android:id="@+id/txt4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/classEditTip4"
+                    android:textColor="@color/input_title"
+                    android:textSize="14dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_input" />
+
+                    <EditText
+                        android:id="@+id/classEditTip4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:inputType="textMultiLine"
+                        android:maxLength="@integer/inputClassDesMax"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:text=""
+                        android:textColor="@color/default_content"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/s_border_bottom"
+                android:paddingBottom="20dp" >
+
+                <TextView
+                    android:id="@+id/txt5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/classEditTip5"
+                    android:textColor="@color/input_title"
+                    android:textSize="14dp" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt5"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp" >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_input" />
+
+                    <EditText
+                        android:id="@+id/classEditTip5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:background="@null"
+                        android:gravity="center"
+                        android:maxLength="@integer/inputClassDesMax"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:singleLine="true"
+                        android:text=""
+                        android:textColor="@color/default_content"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+                </FrameLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/s_border_bottom"
+                android:paddingBottom="20dp" >
+
+                <TextView
+                    android:id="@+id/txt7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/classEditTip6"
+                    android:textColor="@color/input_title"
+                    android:textSize="14dp" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp" >
+
+                    <RadioButton
+                        android:id="@+id/approval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:button="@null"
+                        android:checked="true"
+                        android:drawableRight="@drawable/s_radio"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:tag="0"
+                        android:text="@string/classApproval"
+                        android:textColor="@color/default_content"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/notApproval"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:button="@null"
+                        android:checked="false"
+                        android:drawableRight="@drawable/s_radio"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:tag="1"
+                        android:text="@string/classNotApproval"
+                        android:textColor="@color/default_content"
+                        android:textSize="14dp" />
+
+                    <RadioButton
+                        android:id="@+id/approvalWithWx"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:button="@null"
+                        android:checked="false"
+                        android:drawableRight="@drawable/s_radio"
+                        android:paddingLeft="30dp"
+                        android:paddingRight="30dp"
+                        android:tag="2"
+                        android:text="@string/classApprovalWithWx"
+                        android:textColor="@color/default_content"
+                        android:textSize="14dp" />
+                </RadioGroup>
+            </RelativeLayout>
+        </LinearLayout>
+    </com.shuangge.english.view.component.photograph.MyScrollView>
+
+</LinearLayout>

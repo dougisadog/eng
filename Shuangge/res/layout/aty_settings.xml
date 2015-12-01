@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titlebar="http://schemas.android.com/apk/res/air.com.shuangge.phone.ShuangEnglish"
+    xmlns:MultiSwitch="http://schemas.android.com/apk/res/air.com.shuangge.phone.ShuangEnglish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.shuangge.english.view.component.ComponentTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:save="true"
+        titlebar:titleStrCn="@string/setupTitleCn"
+        titlebar:titleStrEn="@string/setupTitleEn"
+        titlebar:titleTheme="1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/setupTitleTip1En"
+                    android:textColor="#595959"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/setupTitleTip1Cn"
+                    android:textColor="#88595959"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <com.shuangge.english.view.component.ComponentMultiSwitch
+                android:id="@+id/ms1"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                MultiSwitch:multiSwitchBg="@drawable/bg_settings1"
+                MultiSwitch:multiSwitchOptions="@array/settings1"
+                MultiSwitch:multiSwitchSelected="@drawable/bg_settings2"
+                MultiSwitch:multiSwitchSelectedColor="#fff"
+                MultiSwitch:multiSwitchSelectedSize="16"
+                MultiSwitch:multiSwitchUnSelectedColor="#929292"
+                MultiSwitch:multiSwitchUnSelectedSize="16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="#eee" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/setupTitleTip2En"
+                    android:textColor="#595959"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt2"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/setupTitleTip2Cn"
+                    android:textColor="#88595959"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <com.shuangge.english.view.component.ComponentMultiSwitch
+                android:id="@+id/ms2"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                MultiSwitch:multiSwitchBg="@drawable/bg_settings2"
+                MultiSwitch:multiSwitchMargin="3dp"
+                MultiSwitch:multiSwitchOptions="@array/settings2"
+                MultiSwitch:multiSwitchSelected="@drawable/bg_settings3"
+                MultiSwitch:multiSwitchSelectedColor="#26a69a"
+                MultiSwitch:multiSwitchSelectedSize="16"
+                MultiSwitch:multiSwitchUnSelectedColor="#26a69a"
+                MultiSwitch:multiSwitchUnSelectedSize="16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="#eee" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="30dp" >
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/setupTitleTip3En"
+                    android:textColor="#595959"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt3"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/setupTitleTip3Cn"
+                    android:textColor="#88595959"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <com.shuangge.english.view.component.ComponentMultiSwitch
+                android:id="@+id/ms3"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                MultiSwitch:multiSwitchBg="@drawable/bg_settings2"
+                MultiSwitch:multiSwitchMargin="3dp"
+                MultiSwitch:multiSwitchOptions="@array/settings2"
+                MultiSwitch:multiSwitchSelected="@drawable/bg_settings3"
+                MultiSwitch:multiSwitchSelectedColor="#26a69a"
+                MultiSwitch:multiSwitchSelectedSize="16"
+                MultiSwitch:multiSwitchUnSelectedColor="#26a69a"
+                MultiSwitch:multiSwitchUnSelectedSize="16" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="#eee" />
+            
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="20dp" >
+
+                <TextView
+                    android:id="@+id/txt6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center"
+                    android:text="@string/setupTitleTip5En"
+                    android:textColor="#595959"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt6"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:gravity="center"
+                    android:text="@string/setupTitleTip5Cn"
+                    android:textColor="#88595959"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+
+            <com.shuangge.english.view.component.ComponentMultiSwitch
+                android:id="@+id/ms6"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                MultiSwitch:multiSwitchBg="@drawable/bg_settings1"
+                MultiSwitch:multiSwitchOptions="@array/settings3"
+                MultiSwitch:multiSwitchSelected="@drawable/bg_settings2"
+                MultiSwitch:multiSwitchSelectedColor="#fff"
+                MultiSwitch:multiSwitchSelectedSize="16"
+                MultiSwitch:multiSwitchUnSelectedColor="#929292"
+                MultiSwitch:multiSwitchUnSelectedSize="16" />
+            
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="#eee" />
+
+            <RelativeLayout
+                android:id="@+id/rlChangePwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/s_btn_red" >
+
+                <TextView
+                    android:id="@+id/txt5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:paddingBottom="2dp"
+                    android:text="@string/setupTitleTip4En"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/txt5"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/txt5"
+                    android:gravity="center"
+                    android:paddingBottom="2dp"
+                    android:text="@string/setupTitleTip4Cn"
+                    android:textColor="@color/white"
+                    android:textSize="10dp" />
+            </RelativeLayout>
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

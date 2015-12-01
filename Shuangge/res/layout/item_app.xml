@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        style="@style/BtnPostItem"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" >
+
+        <ImageView
+            android:id="@+id/imgHead"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/head_male" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgHead"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgHead"
+            android:ellipsize="end"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/default_title"
+            android:textSize="18dp" />
+        
+        <TextView
+            android:id="@+id/txtDown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtName"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/icon_app_down"
+            />
+
+        <TextView
+            android:id="@+id/txtSignature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtName"
+            android:layout_below="@+id/txtName"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="1"
+            android:maxLength="15"
+            android:textColor="@color/default_sub_info"
+            android:textSize="12dp" />
+        
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/imgHead"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+        	android:layout_marginRight="20dp"
+            android:background="#F7F7F7" />
+
+    </RelativeLayout>
+
+</LinearLayout>

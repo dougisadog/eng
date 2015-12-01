@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:RatingBarView="http://schemas.android.com/apk/res/air.com.shuangge.phone.ShuangEnglish"
+    android:id="@+id/rlBg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_lesson_blue" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp" >
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="41dp"
+            android:layout_height="41dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:background="@color/transparent"
+            android:padding="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/s_btn_back1" />
+
+        <TextView
+            android:id="@+id/txtPath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40dp"
+            android:text=""
+            android:textColor="@color/white"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/imgScore"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:src="@drawable/icon_score2" />
+
+        <TextView
+            android:id="@+id/txtScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="80dp"
+            android:gravity="left"
+            android:text="3200"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <RatingBar
+            android:id="@+id/rbHeart"
+            style="@style/heartRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            ratingBarStyleSmall="true"
+            android:gravity="center" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="45dp"
+        android:layout_marginTop="60dp" >
+
+        <include layout="@layout/lesson_question_top" />
+
+        <com.meetme.android.horizontallistview.HorizontalListView
+            android:id="@+id/hlv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp"
+            android:layout_marginTop="70dp" />
+
+        <RelativeLayout
+            android:id="@+id/rlOptions02"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true" >
+
+            <com.shuangge.english.view.component.wave.WaveformView
+                android:id="@+id/wv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00ffffff" />
+
+            <LinearLayout
+                android:id="@+id/llRecordResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <com.shuangge.english.view.component.RatingBarView
+                    android:id="@+id/rbStar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    RatingBarView:starCount="3"
+                    RatingBarView:starEmpty="@drawable/icon_star3_bg"
+                    RatingBarView:starFill="@drawable/icon_star3"
+                    RatingBarView:starImageSize="20dp"
+                    RatingBarView:starNum="1"
+                    RatingBarView:starSpacing="8dp" />
+
+                <TextView
+                    android:id="@+id/txtRecordStar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Great!"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.shuangge.english.view.lesson.component.LessonPageContainer
+        android:id="@+id/llPageContainer"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:gravity="center" />
+
+</RelativeLayout>

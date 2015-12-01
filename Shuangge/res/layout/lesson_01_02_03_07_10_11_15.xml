@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:RatingBarView="http://schemas.android.com/apk/res/air.com.shuangge.phone.ShuangEnglish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/rlQuestionTop"
+        layout="@layout/lesson_question_top" />
+
+    <LinearLayout
+        android:id="@+id/llImgsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llLessonQuestionBottom"
+        android:layout_below="@+id/rlQuestionTop"
+        android:layout_marginBottom="0dp"
+        android:layout_marginTop="0dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llLessonQuestionBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/rlOptions01"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_lesson"
+            android:gravity="center"
+            android:text="next >"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:id="@+id/rlOptions02"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" >
+
+            <com.shuangge.english.view.component.wave.WaveformView
+                android:id="@+id/wv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00ffffff" />
+
+            <LinearLayout
+                android:id="@+id/llRecordResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="vertical" >
+
+                <com.shuangge.english.view.component.RatingBarView
+                    android:id="@+id/rbStar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    RatingBarView:starCount="3"
+                    RatingBarView:starEmpty="@drawable/icon_star3_bg"
+                    RatingBarView:starFill="@drawable/icon_star3"
+                    RatingBarView:starImageSize="20dp"
+                    RatingBarView:starNum="1"
+                    RatingBarView:starSpacing="8dp" />
+
+                <TextView
+                    android:id="@+id/txtRecordStar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Great!"
+                    android:textColor="@color/white"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <include layout="@layout/lesson_question_bottom" />
+
+        <RelativeLayout
+            android:id="@+id/rlOptions03"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlOptions07"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rlOptions10And11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

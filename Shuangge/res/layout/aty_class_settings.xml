@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titlebar="http://schemas.android.com/apk/res/air.com.shuangge.phone.ShuangEnglish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.shuangge.english.view.component.ComponentTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:quit="true"
+        titlebar:titleStrCn="@string/classDetailsTitleCn"
+        titlebar:titleStrEn="@string/classDetailsTitleEn" />
+
+    <LinearLayout
+        android:id="@+id/llTitleContainer"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#23b6ca"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <com.shuangge.english.view.component.photograph.MyViewPager
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.shuangge.english.view.component.photograph.MyViewPager>
+
+</LinearLayout>

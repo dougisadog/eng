@@ -1,0 +1,778 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">爽哥英语</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- system -->
+    <string name="timeout">网络存在问题，请稍后重试</string>
+    <string name="unknown_error_error_code">未知错误，错误代码</string>
+    <string name="sd_card_in_not_mounted">请加成您的SD卡是否有插入</string>
+    <string name="lessonResConfigErr">课程资源出错，正在为您修复，请稍后.</string>
+    <string name="something_error">发生故障</string>
+    <string name="please_deleted_cache_dir">权限出错，无法读取存储空间</string>
+
+    <!-- unlock -->
+    <string name="lockTip1">该课程没有解锁</string>
+
+    <!-- menu -->
+    <string name="askdelete">删除?</string>
+    <string name="cancel">取消</string>
+    <string name="finishEn">Finish</string>
+    <string name="cancelEn">Cancel</string>
+    <string name="confirm">确定</string>
+    <string name="ok">确定</string>
+    <string name="cancel_draft">不用</string>
+    <string name="askdeletemessage">永久删除这条消息?</string>
+
+    <!-- aty check version -->
+    <string name="versiontipTitle">提示</string>
+    <string name="versiontip">当前版本过小 是否要更新?</string>
+    <string name="versiontip2">当前版本过小 请更新</string>
+    <string name="versiontip3">您当前网络不可用，请检查您的网络</string>
+    <string name="versionOK">确定</string>
+    <string name="versionCancel">取消</string>
+
+    <!-- aty check version -->
+    <string name="versionResTitle">提示</string>
+    <string name="versionResErr">连接服务器失败，请重新启动！</string>
+    <string name="versionResOk">确定</string>
+
+    <!-- aty login、register -->
+    <string name="loginTitle">登 录</string>
+    <string name="regsiterTitle">注 册</string>
+    <string name="loginEn">Login In</string>
+    <string name="loginCn">(登录)</string>
+    <string name="registerEn">Sign Up</string>
+    <string name="registerCn">(注册)</string>
+    <string name="vister">游客</string>
+    <string name="tip1Login">手机号</string>
+    <string name="tip2Login">登录密码</string>
+    <string name="tip3Login"></string>
+    <string name="tip4Login">用户昵称</string>
+    <string name="tip5Login">美联英语eme账号</string>
+    <string name="forgetPwd">忘记密码?</string>
+    <string name="hidePwd">隐藏密码</string>
+    <string name="loginErrTip1">账号不能小于4位</string>
+    <string name="loginErrTip2">密码不能小于6位</string>
+    <string name="loginErrTip3">昵称不能小于3位</string>
+    <string name="loginErrTip4">账号密码错误</string>
+	<string name="loginErrTip5">邀请码不能小于5位</string>
+    <!-- aty home -->
+    <string name="homeTip1">您还未加入任何班级</string>
+    <string name="lastLessonStart">开始</string>
+    <string name="normalEnLv0">初级(M0)</string>
+    <string name="normalEnLv1">中级(M1)</string>
+    <string name="normalEnLv2">高级(M2)</string>
+    <string name="normalEnLv0Content">1 - 20课</string>
+    <string name="normalEnLv1Content">21 - 44课</string>
+    <string name="normalEnLv2Content">45 - 80课</string>
+    <string name="levelTip1">新课程即将上线，敬请期待哟！</string>
+    <string name="levelTip2">您还没有购买该课程，请后买后使用！</string>
+    <string name="levelTip3">有人赠送本课程给你了，请到系统消息页面领取！</string>
+
+    <!-- aty menu -->
+    <string name="menuTitle">更 多</string>
+    <string name="menuItem1">爽店</string>
+    <string name="menuItem2">排行榜</string>
+    <string name="menuItem3">消息通知</string>
+    <string name="menuItem4">设置</string>
+    <string name="menuItem5">账号绑定</string>
+    <string name="menuItem6">离线下载</string>
+    <string name="menuItem7">意见反馈</string>
+    <string name="menuItem8">关于爽哥</string>
+    <string name="menuItem9">注销</string>
+    <string name="menuItem1En">Home</string>
+    <string name="menuItem1Cn">主页</string>
+    <string name="menuItem2En">My profile</string>
+    <string name="menuItem2Cn">我的信息</string>
+    <string name="menuItem3En">Class</string>
+    <string name="menuItem3Cn">班级</string>
+    <string name="menuItem4En">Rankings</string>
+    <string name="menuItem4Cn">排行榜</string>
+    <string name="menuItem5En">Messages</string>
+    <string name="menuItem5Cn">系统信息</string>
+    <string name="menuItem6En">Downloads</string>
+    <string name="menuItem6Cn">课程下载</string>
+    <string name="menuItem7En">Link Account</string>
+    <string name="menuItem7Cn">账号绑定</string>
+    <string name="menuItem8En">Contact us</string>
+    <string name="menuItem8Cn">意见反馈</string>
+    <string name="menuItem9En">About us</string>
+    <string name="menuItem9Cn">关于爽哥</string>
+    <string name="menuItem10En">Settings</string>
+    <string name="menuItem10Cn">设置</string>
+    <string name="menuItem11En">Logout</string>
+    <string name="menuItem11Cn">注销</string>
+    <string name="menuItem12En">Personal Message</string>
+    <string name="menuItem12Cn">私信</string>
+    <string name="menuItem14En">Store</string>
+    <string name="menuItem14Cn">商城</string>
+    <string name="menuItem16En">more</string>
+    <string name="menuItem16Cn">更多</string>
+    <string name="menuItem15En">Invite</string>
+    <string name="menuItem15Cn">邀请好友</string>
+    <string name="menuTip1En">Are you sure you want to exit?</string>
+    <string name="menuTip1Cn">(您确定要退出吗)</string>
+
+    <!-- aty userInfo -->
+    <string name="userInfoEdit">编辑</string>
+    <string name="userInfoEditTitleEn">Editing Profile</string>
+    <string name="userInfoEditTitleCn">(编辑个人资料)</string>
+    <string name="userInfoTip1">个人签名:</string>
+    <string name="userInfoTip2">所在地:</string>
+    <string name="userInfoTip3En">Class</string>
+    <string name="userInfoTip3Cn">(班级)</string>
+    <string name="userInfoTip4En">Occupation</string>
+    <string name="userInfoTip4Cn">(职业)</string>
+    <string name="userInfoTip5En">Income</string>
+    <string name="userInfoTip5Cn">(收入)</string>
+    <string name="userInfoTip6En">Hobbies</string>
+    <string name="userInfoTip6Cn">(兴趣爱好)</string>
+    <string name="userInfoTip7">编辑</string>
+    <string name="userInfoTip8">编辑</string>
+    <string name="userInfoEditTip1">昵称</string>
+    <string name="userInfoEditTip2">账号</string>
+    <string name="userInfoEditTip3">性别</string>
+    <string name="userInfoEditTip4">年龄</string>
+    <string name="userInfoEditTip5">个性签名</string>
+    <string name="userInfoEditTip6">感情状态</string>
+    <string name="userInfoEditTip7">收入</string>
+    <string name="userInfoEditTip8">职业</string>
+    <string name="userInfoEditTip9">所在地</string>
+    <string name="userInfoEditTip10">兴趣爱好</string>
+    <string name="userInfoEditDialogTip3">性别</string>
+    <string name="userInfoEditDialogTip4">年龄</string>
+    <string name="userInfoEditDialogTip6">情感状态</string>
+    <string name="userInfoEditDialogTip7">收入</string>
+    <string name="userInfoEditDialogTip8">职业</string>
+    <string name="userInfoEditDialogTip9">所在地</string>
+    <string name="userInfoEditDialogTip10">兴趣爱好</string>
+    <string name="userInfoEditVistorErr">您目前是游客，请补全账号信息！</string>
+    <string name="userInfoTip9">发私信</string>
+    <string name="userInfoTip10">邀请加入班级</string>
+    <string name="userInfoTip11">关注</string>
+    <string name="userInfoTip12">加入黑名单</string>
+	<string name="userInfoTip13">取消黑名单</string>
+	<string name="userInfoTip14En">Coins</string>
+    <string name="userInfoTip14Cn">(金币)</string>
+	
+    <!-- aty attention -->
+    <string name="interestTitleEn">Interest</string>
+    <string name="interestTitleCn">(兴趣爱好)</string>
+
+    <!-- aty attention -->
+    <string name="attetion">关注</string>
+    <string name="attetionCancel">取消关注</string>
+    <string name="attetionSuccessTip">关注成功</string>
+    <string name="attetionCancelSuccessTip">取消关注成功</string>
+    <string name="attetionMsgEn">After the attention can send messages, do you pay attention?</string>
+	<string name="attetionMsgCn">关注后即可发送消息，是否关注?</string>
+    <!-- aty ranklist -->
+    <string name="userRanklist">个人积分总排行榜</string>
+    <string name="noRanking">未上榜</string>
+
+    <!-- aty class -->
+    <string name="classTitle">班级</string>
+    <string name="classHomeTitleEn">Class</string>
+    <string name="classHomeTitleCn">(班级)</string>
+    <string name="classHomeTip1En">Weekly Ranking</string>
+    <string name="classHomeTip1Cn">(本周排名)</string>
+    <string name="classHomeTip2En">Weekly Score</string>
+    <string name="classHomeTip2Cn">(本周得分)</string>
+    <string name="classHomeTip3En">Invite Members</string>
+    <string name="classHomeTip3Cn">(邀请成员)</string>
+    <string name="classHomeTip4En">Join Class</string>
+    <string name="classHomeTip4Cn">(加入班级)</string>
+    <string name="classHomeTip5En">Post</string>
+    <string name="classHomeTip5Cn">(班级贴)</string>
+    <string name="classHomeTip6En">Write New Post</string>
+    <string name="classHomeTip6Cn">(发帖)</string>
+    <string name="classMsg">消息</string>
+    <string name="classSearch">Search</string>
+    <string name="classSearchTitleEn">Search</string>
+    <string name="classSearchTitleCn">(班级搜索)</string>
+    <string name="classSearchErrTip1">班级名称不能少于2个字符</string>
+    <string name="classSearchTip">Search class</string>
+    <string name="classDetailsTitleEn">Class Details</string>
+    <string name="classDetailsTitleCn">(班级详情)</string>
+    <string name="classSetupTip1">编辑班级资料</string>
+    <string name="classSetupTip2">管理班级成员</string>
+    <string name="classSetupTip3">邀请新成员</string>
+    <string name="classSetupTip4">管理班级发布帖</string>
+    <string name="classEditTitle">编辑班级资料</string>
+    <string name="classEditTip1">所在城市</string>
+    <string name="classEditTip2">班级名称</string>
+    <string name="classEditTip3">班级签名</string>
+    <string name="classEditTip4">班级介绍</string>
+    <string name="classEditTip5">班长微信</string>
+    <string name="classEditTip6">班级加入权限</string>
+    <string name="classInviteTitleEn">Invite Members</string>
+    <string name="classInviteTitleCn">(邀请新成员)</string>
+    <string name="classMemberTitleEn">Members</string>
+    <string name="classMemberTitleCn">(成员)</string>
+    <string name="classMemberEditTitle">班级成员管理</string>
+    <string name="classInviteSearch">Search user</string>
+    <string name="classInviteBaseTitle1">邀请好友</string>
+    <string name="classInviteBaseTitle2">分享</string>
+    <string name="classInviteTip1">爽哥用户</string>
+    <string name="classInviteTip2">QQ好友</string>
+    <string name="classInviteTip3">微信好友</string>
+    <string name="classInviteTip4">微信朋友圈</string>
+    <string name="classInvite">邀请</string>
+    <string name="classInviteErrTip1">邀请名称不能少于2个字符</string>
+    <string name="classHomeTip1">成员:</string>
+    <string name="classHomeTip2">本周积分:</string>
+    <string name="classHomeTip3">本周排行:</string>
+    <string name="classHomeTip4">班级介绍:</string>
+    <string name="classQuit">退出班级</string>
+    <string name="classRecommendTitleEn">Recommend</string>
+    <string name="classRecommendTitleCn">(班级推荐)</string>
+    <string name="classCreateTipEn">create</string>
+    <string name="classCreateTipCn">(创建班级)</string>
+    <string name="classCreateSuccessTip">班级创建成功</string>
+    <string name="classCreateTitleEn">Class</string>
+    <string name="classCreateTitleCn">(创建班级)</string>
+    <string name="classInfoEditTip1">班级名称:</string>
+    <string name="classInfoEditTip2">班级签名:</string>
+    <string name="classInfoEditTip3">区域:</string>
+    <string name="classInfoEditTip4">班级介绍:</string>
+    <string name="classApplyForCreate">申请创建班级</string>
+    <string name="classCreateConditionsTip1">个人等级达到V1</string>
+    <string name="classCreateConditionsTip2">非游客账号</string>
+    <string name="classCreateConditionsTip3">未加入任何班级</string>
+    <string name="classCreateErrTip1">班级名称不能为空</string>
+    <string name="classApplyTitle">邀请留言</string>
+    <string name="classApplyTip1">说点什么\n(点击输入)</string>
+    <string name="userApplyTitle">申请留言</string>
+    <string name="userApplyTip1">说点什么\n(点击输入)</string>
+    <string name="userApply">加入</string>
+    <string name="userApplyTip">求加入 求进步</string>
+    <string name="classApplyTip">请输入邀请信息</string>
+    <string name="applySuccessTip">发送成功</string>
+    <string name="classLeaveTitleEn">Choose a admin</string>
+    <string name="classLeaveTitleCn">(选择新班长)</string>
+    <string name="classLeaveSuccess">您已离开该班级</string>
+    <string name="classApplyForTip">加我微信，拉你进班级微信红包群，夺每周千元现金奖学金！</string>
+    <string name="classApplyForTip1">班长拉您进班级微信红包群，夺每周千元现金奖学金！</string>
+    <string name="classApplyForTip2">拉您进班级微信红包群，夺每周千元现金奖学金！</string>
+    <string name="classApplyEditWx">请输入您的微信号</string>
+    <string name="classApplyEditMsg">请输入申请信息</string>
+	<string name="classApplyForTip3">班长未绑定微信</string>
+	<string name="classApplyForTip4">未绑定微信</string>
+	<string name="classRefuseEditMsg">请输入拒绝信息</string>
+	<string name="classRewardTitle">你们班级获得了</string>
+	<string name="classApproval">需要班长审核</string>
+    <string name="classNotApproval">不用审核直接加入班级</string>
+    <string name="classApprovalWithWx">有微信号直接加入班级</string>
+	
+    <!-- class member -->
+    <string name="classMemberTip1En">Admins</string>
+    <string name="classMemberTip1Cn">(班级班长)</string>
+    <string name="classMemberTip2En">Members</string>
+    <string name="classMemberTip2Cn">(班级成员)</string>
+    <string name="classMemberEditTip1En">Make Admin</string>
+    <string name="classMemberEditTip1Cn">(设置班长)</string>
+    <string name="classMemberEditTip2En">Remove Admin</string>
+    <string name="classMemberEditTip2Cn">(移除班长)</string>
+    <string name="classMemberEditTip3En">Remove</string>
+    <string name="classMemberEditTip3Cn">(移除成员)</string>
+    <string name="classMemberEditTip4En">Profile</string>
+    <string name="classMemberEditTip4Cn">(个人详情)</string>
+    <string name="classMemberPasswordTip">点击输入登录密码</string>
+    <string name="classMemberDialogTip1En">Are you sure you want to delete this user?</string>
+    <string name="classMemberDialogTip1Cn">(您确认要踢出该用户吗?)</string>
+    <string name="classMemberDialogTip2En">Are you sure you want to leave this class?</string>
+    <string name="classMemberDialogTip2Cn">(您确认要离开该班级吗?)</string>
+    <string name="classMemberDialogTip3En">You confirm that specified for sb monitor?</string>
+    <string name="classMemberDialogTip3Cn">(您确认指定sb为班长吗)</string>
+    <string name="classMemberTip4">按总积分排序</string>
+    <string name="classMemberTip3">按周积分排序</string>
+    <string name="classMemberTip5">按加入时间排序</string>
+    <string name="classMemberTip8">按班级贡献排序</string>
+    <string name="classMemberTip6">总积分:</string>
+    <string name="classMemberTip7">周积分:</string>
+    <string name="classMemberTip9">班级周贡献:</string>
+
+    <!-- class msg -->
+    <string name="classMsgTitleEn">class message</string>
+    <string name="classMsgTitleCn">(班级动态)</string>
+    <string name="classMsgTip1">恭喜! 班级ccc创建成功!</string>
+    <string name="classMsgTip2">uuu编辑了班级ccc的资料</string>
+    <string name="classMsgTip3">班级ccc已经转让给了uuu</string>
+    <string name="classMsgTip4">uuu加入班级ccc</string>
+    <string name="classMsgTip5">uuu退出班级ccc</string>
+    <string name="classMsgTip6">uuu被移除班级ccc</string>
+    <string name="classMsgTip7">uuu申请加入您的班级ccc</string>
+    <string name="classMsgTip8">uuu邀请您加入TA的班级ccc</string>
+    <string name="classMsgTip9">, 理由:</string>
+    <string name="classMsgTip10En">Time out</string>
+    <string name="classMsgTip10Cn">(已加入其它班级)</string>
+    <string name="classMsgTip11En">Accept</string>
+    <string name="classMsgTip11Cn">(同意)</string>
+    <string name="classMsgTip17En">Decline</string>
+    <string name="classMsgTip17Cn">(拒绝)</string>
+    <string name="classMsgTip12">uuu被任命为班级ccc的班长</string>
+    <string name="classMsgTip13">uuu被解除班级ccc的班长职务了</string>
+    <string name="classMsgTip14">uuu被任命为副班长</string>
+    <string name="classMsgTip15">uuu被解除副班长</string>
+    <string name="classMsgTip16En">Accepted</string>
+    <string name="classMsgTip16Cn">(已同意)</string>
+    <string name="classMsgTip18En">Declined</string>
+    <string name="classMsgTip18Cn">(已拒绝)</string>
+    <string name="classMsgTip19">uuu拒绝你加入班级</string>
+    <string name="classMsgTip20">ccc班级拒绝uuu的申请</string>
+	<string name="classMsgTip21">未绑定微信</string>
+	<string name="classMsgTip22">(点击可以复制)</string>
+	<string name="classMsgTip23En">Time out</string>
+	<string name="classMsgTip23Cn">(已加入其它班级)</string>
+	<string name="classMsgTip24En">Time out</string>
+	<string name="classMsgTip24Cn">(已加入本班级)</string>
+	<string name="classMsgTip25En">Time out</string>
+	<string name="classMsgTip25Cn">(已加被其它管理员拒绝)</string>
+    <!-- aty post -->
+    <string name="postTitleEn">Post</string>
+    <string name="postTitleCn">(班级帖)</string>
+    <string name="postSend">发帖</string>
+    <string name="postTitle">编辑帖子内容</string>
+    <string name="postTip1">给他一个个性标题</string>
+    <string name="postTip2">此时,你想跟你的同学说些什么?</string>
+    <string name="postSuccessTip">发布成功</string>
+    <string name="postDetailsTitleEn">Post</string>
+    <string name="postDetailsTitleCn">(帖子)</string>
+    <string name="postDetailsTip1">楼主</string>
+    <string name="postDetailsTip2">楼</string>
+    <string name="postDetailsTip3">删除</string>
+    <string name="postDetailsTip4">评论</string>
+    <string name="replyErrTip1">内容不能为空</string>
+    <string name="reply">回复</string>
+    <string name="replyDelete">删除回复</string>
+    <string name="replyDeleteTipEn">Are you sure you want to delete this reply?</string>
+    <string name="replyDeleteTipCn">(你确定要删除该回复嘛)</string>
+    <string name="postDeleteTipEn">Are you sure you want to delete this post?</string>
+    <string name="postDeleteTipCn">(你确定要删除该帖嘛?)</string>
+    <string name="replyPost">回复帖子</string>
+    <string name="replySb">回复</string>
+    <string name="replyTip">此评论已删除</string>
+    <string name="replyScuccessTip">回复成功</string>
+
+    <!-- system msg -->
+    <string name="systemMsgTitleEn">System Message</string>
+    <string name="systemMsgTitleCn">(系统通知)</string>
+    <string name="systemMsgTip1">Read More</string>
+    <string name="systemMsgTip2">Close</string>
+	<string name="systemMsgTip3">您未安装任何应用市场，请安装后评价</string>
+	<string name="systemMsgTip4">您未安装QQ，请安装QQ</string>
+    <!-- contact us -->
+    <string name="contactUsTitleEn">Contact Us</string>
+    <string name="contactUsTitleCn">(意见反馈)</string>
+    <string name="contactUsTip1">请输入反馈内容</string>
+    <string name="contactUsTip2">请输入QQ、邮件或电话</string>
+    <string name="contactUsTip3">Comment</string>
+    <string name="contactUsTip4">Contact Information</string>
+    <string name="contactUsErrTip1">反馈内容不能为空</string>
+    <string name="contactUsErrTip2">联系方式不能为空</string>
+    <string name="contactUsSuccessTip">感谢您的反馈，我们会尽快处理！</string>
+    
+
+    <!-- account center -->
+    <string name="accountCenterTitleEn">Account</string>
+    <string name="accountCenterTitleCn">(个人中心)</string>
+    <string name="accountCenterTip1">Profile</string>
+    <string name="accountCenterTip1En">Message</string>
+    <string name="accountCenterTip1Cn">(系统消息)</string>
+    <string name="accountCenterTip2En">settings</string>
+    <string name="accountCenterTip2Cn">(设置)</string>
+    <string name="accountCenterTip3En">Link Account</string>
+    <string name="accountCenterTip3Cn">(账号绑定)</string>
+    <string name="accountCenterTip4En">Logout</string>
+    <string name="accountCenterTip4Cn">(注销)</string>
+    <string name="accountCenterTip5">周排行：</string>
+    <string name="accountCenterTip6">周积分：</string>
+    <string name="accountCenterTip7">总排行：</string>
+    <string name="accountCenterTip8">总积分：</string>
+
+    <!-- setup -->
+    <string name="setupTitleEn">settings</string>
+    <string name="setupTitleCn">(设置)</string>
+    <string name="setupTitleTip1En">Pronunciation Difficuty</string>
+    <string name="setupTitleTip1Cn">(语音精准度)</string>
+    <string name="setupTitleTip2En">Automatically download courses when WIFI is available</string>
+    <string name="setupTitleTip2Cn">(WiFi下，自动下载课程)</string>
+    <string name="setupTitleTip3En">Download over Cellular Network</string>
+    <string name="setupTitleTip3Cn">(在2G/3G下，提示下载)</string>
+    <string name="setupTitleTip4En">Change Password</string>
+    <string name="setupTitleTip4Cn">(修改密码)</string>
+    <string name="setupTitleTip5En">Personal Message</string>
+    <string name="setupTitleTip5Cn">(未关注人私信设置)</string>
+    
+    <string name="downLoadWithWifi">当前wifi网络，是否下载课程？</string>
+    <string name="downLoadWithoutWifi">当前非wifi网络，是否下载课程？</string>
+    
+    <!-- binding -->
+    <string name="bindingInfosTitleEn">Link Account</string>
+    <string name="bindingInfosTitleCn">(账号绑定)</string>
+    <string name="bindingInfosTip1">绑定手机</string>
+    <string name="bindingInfosTip2">设置微信</string>
+    <string name="bindingInfosTip3">设置支付宝</string>
+    <string name="bindingPhoneTitleEn">Link Phone</string>
+    <string name="bindingPhoneTitleCn">(绑定手机)</string>
+    <string name="bindingPhoneTip1">请输入手机号码</string>
+    <string name="bindingPhoneTip2">获取验证码</string>
+    <string name="bindingPhoneTip3">请输入验证码</string>
+    <string name="bindingPhoneTip4">绑定手机</string>
+    <string name="bindingPhoneTip5">您当前绑定的手机号码为:</string>
+    <string name="bindingPhoneTip6">重新获取验证码</string>
+    <string name="bindingPhoneTip7">Phone token</string>
+    <string name="bindingPhoneTip8">Phone</string>
+    <string name="bindingPhoneErrTip1">手机格式不正确,请重新输入</string>
+    <string name="bindingPhoneSuccessTip">绑定成功</string>
+    <string name="bindingWechatTitle">设置微信号</string>
+    <string name="bindingWechatTip1">您当前设置的微信号为:</string>
+    <string name="bindingWechatTip2">请输入微信账号</string>
+    <string name="bindingWechatTip3">请输入爽哥登录密码</string>
+    <string name="bindingWechatSuccessTip">绑定成功</string>
+    <string name="bindingAlipayTitleEn">Link Alipay</string>
+    <string name="bindingAlipayTitleCn">(设置支付宝)</string>
+    <string name="bindingAlipayTip1">您当前设置的支付宝账号为:</string>
+    <string name="bindingAlipayTip2">请输入支付宝账号</string>
+    <string name="bindingAlipayTip3">请输入爽哥登录密码</string>
+    <string name="bindingAlipayTip4En">Alipay account</string>
+    <string name="bindingAlipayTip4Cn">(支付宝账号)</string>
+    <string name="bindingAlipayTip5En">Password</string>
+    <string name="bindingAlipayTip5Cn">(爽哥登录密码)</string>
+    <string name="bindingAlipaySuccessTip">绑定成功</string>
+    <string name="bindingAccountTitleEn">(Link Account)</string>
+    <string name="bindingAccountTitleCn">(设置账号)</string>
+    <string name="bindingAccountTip1">爽哥账号</string>
+    <string name="bindingAccountTip2">昵称</string>
+    <string name="bindingAccountTip3">登录密码</string>
+    <string name="bindingAccountTip4">请输入手机号</string>
+    <string name="bindingAccountSuccessTip">恭喜您，成为爽哥正式用户！</string>
+    <string name="bindingAccountErrTip">请补全账号信息,才可以使用此功能！</string>
+    <string name="bindingAccountErrTip1">请重新登录!</string>
+    <string name="changePasswordTip">原密码</string>
+    <string name="changePasswordTip1">新密码</string>
+    <string name="changePasswordTip2">修改密码</string>
+    <string name="changePasswordTitleEn">Change Password</string>
+    <string name="changePasswordTitleCh">修改密码</string>
+    <string name="changePasswordTip3">修改成功</string>
+
+    <!-- forget -->
+    <string name="forgetAccountTitleEn">Reset Password</string>
+    <string name="forgetAccountTitleCn">(重置密码)</string>
+    <string name="forgetAccountSuccessTip">验证成功，请输入新密码！</string>
+    <string name="forgetAccountTip1">请输入您的新密码</string>
+    <string name="forgetAccountTip2">Password</string>
+    <string name="forgetResetPwdSuccessTip">重置密码成功，请重新登录!</string>
+
+    <!-- about -->
+    <string name="aboutTitleEn">About Us</string>
+    <string name="aboutTitleCn">(关于爽哥)</string>
+    <string name="aboutContent1"><![CDATA[爽哥英语是一款融合颠覆式教学理念和尖端语音评测技术的英语学习应用，通过情景化学习模式练习英语听说和阅读，引入了班级社群学习概念，每天体验真人口语对练和结伴学习的乐趣，更有无限的奖励机制，激发你的英语学习欲望，让你轻轻松松爱上飚英语。]]></string>
+    <string name="aboutContent2"><![CDATA[联系我们:\n微信公众号：shuanggeen\n新浪微博:@爽哥英语]]></string>
+    <string name="aboutContent3"><![CDATA[爽哥微信:shuangge8（点击可复制）]]></string>
+    <string name="aboutContent4"><![CDATA[（欢迎给我们提出任何有关产品的建议，我们会非常重视您的宝贵建议，并及时回复您。）]]></string>
+    <string name="aboutContent5"><![CDATA[爽哥英语 版权所有]]></string>
+    <string name="aboutWX">shuangge8</string>
+    <string name="aboutClipboardTip">爽哥微信已经复制到剪切板</string>
+    <string name="aboutContent6"><![CDATA[QQ群:979903495（点击可加入）]]></string>
+    <string name="aboutContent7">QQ群: 311675643</string>
+    <string name="qqGroupKey">CrxPGAEbLBoX3U3GCE-mk-CGTwtgJkHH</string>
+    <string name="qqGroupUrl">mqqopensdkapi://bizAgent/qm/qr?url=http%3A%2F%2Fqm.qq.com%2Fcgi-bin%2Fqm%2Fqr%3Ffrom%3Dapp%26p%3Dandroid%26k%3D</string>
+	<string name="aboutContent8">当前版本是最新版本</string>
+	<string name="appListTitleEn">推荐应用</string>
+    <!-- download -->
+    <string name="downloadTitleEn">Download</string>
+    <string name="downloadTitleCn">(离线下载)</string>
+    <string name="downloadTip1">未开始</string>
+    <string name="downloadTip2">连接中</string>
+    <string name="downloadTip3">等待中</string>
+    <string name="downloadTip4">正在下载</string>
+    <string name="downloadTip5">暂停</string>
+    <string name="downloadTip6">安装中</string>
+    <string name="downloadTip7">已下载</string>
+    <string name="downloadTip8">Download All</string>
+
+    <!-- lesson -->
+    <string name="lessonType4sTitleEn">Lessons</string>
+    <string name="lessonType4sTitleCn">(课程)</string>
+    <string name="lessonType5sTitleEn">Course</string>
+    <string name="lessonType5sTitleCn">(课程科目)</string>
+    <string name="lessonType5sTip1">核心课程</string>
+    <string name="lessonType5sTip4">口语达人</string>
+    <string name="lessonType5sTip7">写作达人</string>
+    <string name="lessonType5sTip10">阅读达人</string>
+    <string name="lessonType5sTip13">全能选手</string>
+    <string name="lessonType5sTip14">单元重点</string>
+    <string name="lessonErrTip">连接服务器失败，请重新连接</string>
+    <string name="lessonTip1En">Your progress will be saved, and you can continue where you left</string>
+    <string name="lessonTip1Cn">(您的进度将会被保存,您可以退出当前课程)</string>
+    <string name="lessonTip1">需要通关本课程之前所有课程模块才能解锁本课程</string>
+    <string name="lessonTip2">需要通关本课程之前所有课程模块才能解锁本课程</string>
+    <string name="lessonTip3">需要通关本模块之前的所有模块才能解锁本模块</string>
+    <string name="lessonTip4">钥匙不足，请在商店内购买</string>
+    <string name="lessonTip5">该课程已经解锁，请勿重复解锁</string>
+    <string name="lessonTip6">课程解锁成功，请重新进入</string>
+    <string name="lessonType01Tip">点击“next”继续</string>
+    <string name="lessonType02Tip">在“叮”的一声后跟读</string>
+    <string name="lessonType03Tip">根据图片\n选择答案</string>
+    <string name="lessonType05Tip">根据提示\n选择图片</string>
+    <string name="lessonType06Tip">根据提示\n选择图片</string>
+    <string name="lessonType07Tip">根据提示\n选择答案</string>
+    <string name="lessonType08Tip">根据提示\n选择图片</string>
+    <string name="lessonType10Tip">根据提示\n拼写单词</string>
+    <string name="lessonType11Tip">根据提示\n拼写单词</string>
+    <string name="lessonType13Tip">根据提示\n选择图片</string>
+    <string name="lessonType14Tip">根据提示\n选择图片</string>
+    <string name="lessonTip6En">Failure to obtain results，whether to reobtain?</string>
+    <string name="lessonTip6Cn">(获取结果失败，是否重新获取?)</string>
+    
+    <!-- rewards class member list -->
+    <string name="rewardsLastweekEn">Rewards Rank</string>
+    <string name="rewardsLastweekCn">上周贡献</string>
+
+    <!-- setlevel -->
+    <string name="setlevelTitleEn">Please select your English level objectively.</string>
+    <string name="setlevelTitleCn">(请务必客观的选择您的英语水平)</string>
+    <string name="setlevelTip1En">None</string>
+    <string name="setlevelTip11En">I don\'t know any Enlgish yet</string>
+    <string name="setlevelTip1Cn">(差)</string>
+    <string name="setlevelTip2En">Beginner</string>
+    <string name="setlevelTip12En">I only know a few English words</string>
+    <string name="setlevelTip2Cn">(不好)</string>
+    <string name="setlevelTip3En">Intermediate</string>
+    <string name="setlevelTip13En">I can have a short conversation</string>
+    <string name="setlevelTip3Cn">(一般)</string>
+    <string name="setlevelTip4En">Advanced</string>
+    <string name="setlevelTip14En">I can have a long conversation</string>
+    <string name="setlevelTip4Cn">(好)</string>
+    
+    <!-- read -->
+    <string name="readListTitleEn">article</string>
+    <string name="readListTitleCn">(文章)</string>
+    <string name="readTitleEn">article</string>
+    <string name="readTitleCn">(文章)</string>
+    
+    <string name="readRetryBtn">Retry</string>
+    <string name="readExitBtn">Exit</string>
+    <string name="readNextBtn">Next</string>
+    
+    <string name="readQuizTitle">开始做题</string>
+    <string name="readKeyWord">核心词汇</string>
+    <string name="readlearnWordBtn">单词学习</string>
+    <string name="readStartQuizBtn">开始做题</string>
+    
+    <string name="readLLKTitle">开始做题</string>
+    <string name="readLLKScore">分</string>
+    
+    <string name="readCertificateWrongWordBtn">单词本</string>
+    <string name="readCertificateTitleCn">四级课程</string>
+    <string name="readCertificateTitleEn">Certificate IV</string>
+    
+    <string name="readHomeGuideStep1">在里面选择您不会的单词，所选单词会进入您的单词本，方便您重点记忆</string>
+    <string name="readHomeGuideStep2">在文章阅读里选择的单词可以在此处重点学习</string>
+    <string name="readHomeGuideStep3">您学习的单词在此处通过游戏方式检验，妙趣横生</string>
+    <string name="readHomeGuideStep4">掌握本篇文章单词后，攻关阅读理解，巩固学习成果</string>
+     <string name="readHomeLockTip">需要通关本课程之前的所有模块才能解锁本课程</string>
+    
+     <string name="readLLKGuide">点击对应的中文和英文组合</string>
+     <string name="readLLKTimeout">您在规定的时间没有 完成连连看，请重做本模块</string>
+     <string name="readLLKMoreWords"> 下一部分部分单词连连看要开始了</string>
+     <string name="readLLKBtn">点击继续</string>
+     
+     <string name="readGuide">点击您不会的单词，会出现翻译哦</string>
+     <string name="readNoneWords">您没有点击您不会的单词，若您不选则系统会推荐您一些单词进行学习</string>
+     <string name="readNoneWordsBtn1">去选词</string>
+     <string name="readNoneWordsBtn2">点击继续</string>
+     
+     <string name="readFourGuide">您在文章中选择翻译的生词都会放到这里哦</string>
+     <string name="readFourNoneWords">您还没有选择单词放入生词本，去选择吧</string>
+     <string name="readFourNoneWordsBtn1">去选词</string>
+     <string name="readFourNoneWordsBtn2">再等等</string>
+     
+     <string name="readQuestionGuide">左滑动或点击开始做题进行题目/文章切换</string>
+     <string name="readQuestionGuide2">点击选项最左面对选项进行选择</string>
+    
+    <string name="readLessonWarning">网络原因，当前资源未下载完成，点击继续下载</string>
+    
+    <!-- component refreshlv -->
+    <string name="refreshlvHeader1"><![CDATA[下拉即可刷新]]></string>
+    <string name="refreshlvHeader2"><![CDATA[正在刷新...]]></string>
+    <string name="refreshlvHeader3"><![CDATA[松开立即刷新]]></string>
+    <string name="refreshlvFooter1"><![CDATA[上拉加载更多]]></string>
+    <string name="refreshlvFooter2"><![CDATA[正在加载...]]></string>
+    <string name="refreshlvFooter3"><![CDATA[松开立即加载]]></string>
+
+    <!-- component photograph -->
+    <string name="photograph">Take a New Picure</string>
+    <string name="album">Select from your Gallery</string>
+    <string name="delete">Delete</string>
+    <string name="savePics">Save pictures to album</string>
+    <string name="savePicsTip">图片已保存到相册</string>
+    <string name="secretMsg">私信</string>
+    <string name="txtInvite">邀请</string>
+    <string name="txtAttention">关注</string>
+    <string name="txtBlack">加入黑名单</string>
+
+    <!-- other -->
+    <string name="isNull">无</string>
+    <string name="save">保存</string>
+    <string name="saveEn">Save</string>
+    <string name="saveCn">(保存)</string>
+    <string name="noSave">不保存</string>
+    <string name="secrecy">保密</string>
+    <string name="more">更多</string>
+    <string name="submit">OK</string>
+    <string name="serverErrMsg">服务器连接失败</string>
+    <string name="dataErrMsg">长时间未操作，请重新登陆</string>
+    <string name="saveSuccessTipCn">保存成功</string>
+    <string name="saveFailTip">保存失败，请填写所有信息</string>
+    <string name="successTipCn">操作成功</string>
+    <string name="deleteSuccessTip">删除成功</string>
+    <string name="backExit">再按一次退出软件</string>
+    <string name="copyWechat">微信号已经复制到剪切板</string>
+    <string name="copyExchangeNo">兑换码已经复制到剪切板</string>
+
+    <!-- dialog -->
+    <string name="txtDialogCancelEn">Cancel</string>
+    <string name="txtDialogCancelCn">(取消)</string>
+    <string name="txtDialogSubmitEn">OK</string>
+    <string name="txtDialogSubmitCn">(确认)</string>
+    <string name="txtDialogYesEn">Yes</string>
+    <string name="txtDialogYesCn">(好)</string>
+    <string name="txtDialogNoEn">No</string>
+    <string name="txtDialogNoCn">(不)</string>
+    <string name="txtDialogRestartEn">Restart</string>
+    <string name="txtDialogRestartCn">(重新开始)</string>
+    <string name="ageErrTip">年龄应该在0-100岁之间,请重新设置</string>
+	<string name="txtDialogClose">关闭</string>
+	<string name="txtDialogGet">领取</string>
+    <string name="dialogNoticeTitle">重要通知</string>
+    <string name="dialogRewardsHelpTitle">重要通知</string>
+    <string name="dialogRewardsGetTip1">恭喜</string>
+    <string name="dialogRewardsGetTip2">你们班获得了奖学金</string>
+    <string name="dialogRewardsGet">领取</string>
+    <string name="dialogRewardsErrTip">您的网络不好,请重新点击领奖按钮</string>
+    <string name="dialogUnlockBtn1">再等等</string>
+    <string name="dialogUnlockBtn2">商城购买</string>
+    <string name="dialogUnlockBtn3">邀请好友</string>
+    <string name="dialogUnlockBtn4">解锁</string>
+    
+    
+    <!-- share -->
+    <string name="shareQQ">QQ好友</string>
+    <string name="shareWX">微信好友</string>
+    <string name="sharePYQ">朋友圈</string>
+    <string name="shareTip">炫成绩 ,得积分</string>
+    <string name="shareRewardsSuccessTip">分享成功！请联系工作人员领取红包。</string>
+
+    <!-- loadding -->
+    <string name="loaddingTip1">加载中，请稍后...</string>
+    <string name="loaddingTip2">第一次加载课程包会比较慢，请耐心等待。。。</string>
+
+    <!-- loadding -->
+    <string name="speechTip1">请检查您的网络，语音评测功能必须是在网络好的情况下才能正常使用哦</string>
+    <string name="speechTip2">请检查您的语音设置权限，允许软件录音才能正常使用哦</string>
+    <string name="settingTip">请点击确定继续使用</string>
+    <string name="btnStrSubmit">设置</string>
+    <string name="btnStrExit">退出课程</string>
+
+    <!-- 英语路线 -->
+    <string name="english_route_title">爽哥英语路线图</string>
+    <string name="course_detail_title">详情课程</string>
+
+    <!-- 单元重点 -->
+    <string name="unit_point_title">单元重点</string>
+    <string name="unit_point_A">单元重点A</string>
+    <string name="unit_point_B">单元重点B</string>
+    <string name="digitsLoginName">0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@._</string>
+    <string name="digitsPassword"><![CDATA[0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLIMNOPQRSTUVWXYZ`!@#$%^&*()_-+=]]></string>
+    <!-- 私信 -->
+    <string name="privateMsgTitleEn">Personal Message</string>
+    <string name="privateMsgTitleCn">(私信)</string>
+    <string name="blackListSuccessTip">加入黑名单成功</string>
+    <string name="blackListCancelSuccessTip">取消黑名单成功</string>
+    <string name="creatChatTitleEn">Initiate Chat</string>
+    <string name="creatChatTitleCn">(发起聊天)</string>
+    
+     <!-- 提现 -->
+    <string name="reward_confirm_tip">(三个工作日内到账)</string>
+    <string name="reward_confirm_cn">提现</string>
+    <string name="reward_confirm_en">Withdraw money</string>
+    
+    <string name="reward_confirm_wechat_placeholder">输入领取红包的微信账号</string>
+    
+    <string name="reward_confirm_wrong_account_tip">奖学金不足，提取失败</string>
+    <string name="reward_confirm_wrong_wechat_tip">微信号不能为空</string>
+    <string name="userInfoTip7En">scholarship</string>
+    <string name="userInfoTip7Cn">(奖学金)</string>
+    <string name="reward_get_last_week">奖学金已打入个人账户，请在个人中心查看</string>
+    <string name="reward_get_tip"> 请及时联系工作人员</string>
+    <string name="reward_account_err">奖学金不足，提取失败</string>
+    <!-- shop -->
+    <string name="shopTitle1En">My Orders</string>
+    <string name="shopTitle1Cn">(我的订单)</string>
+    <string name="shopTitle3En">ConfirmOrder</string>
+    <string name="shopTitle3Cn">(确认订单)</string>
+    <string name="shopBtnBuyEn">Buy</string>
+    <string name="shopBtnBuyCn">购买</string>
+    <string name="shopBtnGiveEn">赠送</string>
+    <string name="shopBtnConfirmEn">确定</string>
+    <string name="shopBtnAddressEn">Edit Shipping Address</string>
+    <string name="shopBtnAddressCn">编辑收货地址</string>
+    <string name="shopTipEn">Out of Stock</string>
+    <string name="shopTipCn">售罄</string>
+    <string name="shopTip1En">Purchased</string>
+    <string name="shopTip1Cn">已购买</string>
+    <string name="shopTip3En">商品已下架</string>
+    <string name="shippingAddressTip1">城市</string>
+    <string name="shippingAddressTip2">联系电话</string>
+    <string name="shippingAddressTip3">详细地址</string>
+    <string name="shippingAddressTip4">邮政编码</string>
+    <string name="shippingAddressTip5">收件人姓名</string>
+    <string name="shopBtnSave">Save</string>
+    <string name="shopBtnAddressListEn">Shipping Address</string>
+    <string name="shopBtnAddressListCn">(收获地址列表)</string>
+    <string name="shopTitle2En">Store</string>
+    <string name="shopTitle2Cn">(商城)</string>
+    <string name="shopConfirmBuy">去付款</string>
+    <string name="addressDeleteTipEn">Are you sure you want to delete this address?</string>
+    <string name="addressDeleteTipCn">(你确定要删除该地址嘛)</string>
+    <string name="shopOrderTip1">待付款</string>
+    <string name="shopOrderTip2">已发货</string>
+	<string name="shopOrderTip3">已收货</string>
+	<string name="shopOrderTip4">已付款</string>
+	<string name="shopOrderTip5">订单关闭</string>
+	<string name="shopOrderTip6">已购买</string>
+	<string name="shopOrderTip8">订单已超时</string>
+	<string name="shopOrderTip9">库存不足</string>
+	<string name="shopOrderTip7">设置收货地址成功</string>
+	<string name="shopOrderTip10">已达到购买上限</string>
+	<string name="shopOrderTip11">已达到库存上限</string>
+	<string name="shopOrderPayTitle">订单提交成功</string>
+	<string name="shopPay1">支付宝支付</string>
+	<string name="shopPay2">微信支付</string>
+	<string name="shopPay3">确认支付</string>
+	<string name="shopPay4">奖学金支付</string>
+	<string name="shopTitle4En">GoodsDetail</string>
+    <string name="shopTitle4Cn">(商品详情)</string>
+    <string name="shopTitle5En">OrderDetail</string>
+    <string name="shopTitle5Cn">(订单详情)</string>
+    <string name="giveUserGiftTitleEn">Choose User</string>
+    <string name="giveUserGiftTitleCn">(选择赠送人)</string>
+    
+    <string name="inviteTitle">分享您的邀请码:</string>
+    <string name="inviteBtn">邀请好友</string>
+    <string name="inviteBtn1">填写邀请码</string>
+    <string name="inviteTips"> 1，被邀请人填写您的邀请码以后，您与被邀请人将会各获得500金币.\n2，被邀请人填写邀请码且绑定手机后，邀请人获得    钥匙*3，被邀请人获得  钥匙*5.</string>
+    <string name="inviteTips1">请输入您的邀请码</string>
+    <string name="inviteTips2">填写邀请码且绑定手机成功后可以获得500个金币，金币可在商城换商品</string>
+    
+    
+	<!-- 微信支付 -->
+	<string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+	<string name="wx_app_tip">提示</string>
+	
+</resources>

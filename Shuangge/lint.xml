@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="MissingPrefix" severity="warning" />
+    <issue id="MissingTranslation" severity="warning" />
+    <issue id="ShowToast">
+        <ignore path="src/com/shuangge/english/view/login/AtyLogin.java" />
+    </issue>
+</lint>

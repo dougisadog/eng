@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="0dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:padding="20dp" >
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="130dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="标题"
+            android:textColor="@color/default_title"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtTitle"
+            android:layout_below="@+id/img1"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:lineSpacingExtra="5dp"
+            android:singleLine="true"
+            android:text="法师法撒旦法师的发顺丰的萨芬撒法萨芬的的萨芬撒发大水发法师法撒旦法师的发顺丰的萨芬撒法萨芬的的萨芬撒发大水发法师法撒旦法师的发顺丰的萨芬撒法萨芬的的萨芬撒发大水发法师法撒旦法师的发顺丰的萨芬撒法萨芬的的萨芬撒发大水发法师法撒旦法师的发顺丰的萨芬撒法萨芬的的萨芬撒发大水发"
+            android:textColor="@color/default_sub_info"
+            android:textSize="12dp" />
+
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtTitle"
+            android:layout_below="@+id/txtTitle"
+            android:layout_marginTop="6dp"
+            android:src="@drawable/icon_sys_msg" />
+
+        <TextView
+            android:id="@+id/txtCreateDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/img1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="1dp"
+            android:layout_toRightOf="@+id/img1"
+            android:text="11月2号"
+            android:textColor="@color/default_content"
+            android:textSize="10dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtReadMore"
+            android:layout_width="90dp"
+            android:layout_height="32dp"
+            android:layout_alignLeft="@+id/txtTitle"
+            android:layout_below="@+id/txtDetails"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_green_border"
+            android:gravity="center"
+            android:text="@string/systemMsgTip1"
+            android:textColor="#27a69b"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txtGetGift"
+            android:layout_width="90dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/txtDetails"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_green_border"
+            android:gravity="center"
+            android:text="Get Gift"
+            android:textColor="#27a69b"
+            android:textSize="14dp"
+            android:textStyle="bold" 
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/txtIsGet"
+            android:layout_width="90dp"
+            android:layout_height="32dp"
+            android:layout_below="@+id/txtDetails"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/s_btn_shop_unselected"
+            android:gravity="center"
+            android:text="Gotted"
+            android:textColor="@color/gray"
+            android:textSize="14dp"
+            android:textStyle="bold" 
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+</FrameLayout>

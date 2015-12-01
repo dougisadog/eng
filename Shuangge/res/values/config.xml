@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    <string name="serverUrl" tag="d测试服务器 ">http://192.168.31.150:8080/shuangge/rest</string>
+
+    <string name="serverUrl" tag="vee测试服务器 ">http://192.168.31.183:8080/shuangge</string>    <string name="serverUrl" tag="正式服务器 ">http://sg.happyge.com:9000/shuangge</string>
+    -->
+    <string name="serverUrl" tag="外部测试服务器 ">http://112.124.9.127:9000/shuangge</string>  
+
+    <!--
+    <string name="resUrl">http://res.happyge.com:8081/client/content_closed1/</string>
+    <string name="resUrl2">http://res.happyge.com:8081/client/content_closed2/</string>
+
+    <string name="resUrl">http://res.happyge.com:8081/client/test1/</string>    <string name="resUrl2">http://res.happyge.com:8081/client/test2/</string>
+    <string name="resUrl">http://res.happyge.com:8081/client/content1_1/</string>
+    <string name="resUrl2">http://res.happyge.com:8081/client/content1_2/</string>
+    -->
+    <string name="resReadUrl">http://res.happyge.com:8081/res/words/</string>
+    <string name="resUrl">http://res.happyge.com:8081/client/kechengceshi1/</string>
+    <string name="resUrl2">http://res.happyge.com:8081/client/kechengceshi2/</string>
+    
+    <string name="recommendAppUrl">http://res.happyge.com:8081/recommend-app/</string>
+
+    <bool name="debug">false</bool>
+    <bool name="showFps">false</bool>
+
+    <string name="sndUrl">/snd/</string>
+    <string name="imgUrl">/img/</string>
+    <string name="forced_update_version">1</string>
+    <string name="configUrl">http://res.happyge.com:8081/client/content1_1/config_android.xml</string>
+    <string name="noticeUrl">http://res.happyge.com:8081/mobile/notice.html</string>
+    <string name="faqUrl">http://res.happyge.com:8081/mobile/faq.html</string>
+    <string name="rewardsHelpUrl">http://res.happyge.com:8081/mobile/rewards_help.html</string>
+    <string name="rewardsClassManagerTip">http://res.happyge.com:8081/mobile/rewards_class_manager_tip.html</string>
+    <string name="rewardsClassMemberTip">http://res.happyge.com:8081/mobile/rewards_class_member_tip.html</string>
+    <string name="withdrawalsTip">http://res.happyge.com:8081/mobile/withdrawals_tip.html</string>
+
+    <integer name="secretMsg_month">3</integer>
+
+</resources>

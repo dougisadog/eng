@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="air.com.shuangge.phone.ShuangEnglish"
+    android:versionCode="10301"
+    android:versionName="1.3.1" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.NFC" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <!-- PUHS SDK 配置开始 -->
+
+
+    <!-- 去掉READ_LOGS权限 -->
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 开机启动添加 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- PUSH SDK 配置结束 -->
+    
+    <!-- 微信支付需要的权限 ,下面的是唯一的支持权限,还有Internet 和  writeExternalStorage 权限和上面重复,不再定义 -->
+	<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+	
+	
+    <application
+        android:name="com.shuangge.english.GlobalApp"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AnimLeftToRightTheme" >
+
+        <!-- service -->
+        <service android:name="com.shuangge.english.support.notice.FetchNewMsgService" />
+        
+        <service android:name="com.shuangge.english.support.service.Type4DownLoadService" /> 
+        
+        <service android:name="com.shuangge.english.support.service.LessonDownLoadService" /> 
+
+        <!-- receiver -->
+        <receiver
+            android:name="com.shuangge.english.support.notice.ConnectionChangeReceiver"
+            android:label="NetworkConnection" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.shuangge.english.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.shuangge.english.view.read.AtyVideoTest"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.shuangge.english.view.login.AtyGuide"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.login.AtyLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.login.AtyMetenLogin"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.login.AtyRegister"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.login.AtyRegisterPhone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.login.AtyForgetAccount"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.login.AtyResetPwd"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.home.AtySetLevel"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.home.AtyHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.menu.AtyAccountCenter"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.menu.AtyInvite"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.user.AtyUserInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.user.AtyBrowseUserInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.user.AtyUserInfoEdit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.ranklist.AtyRanklist"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.msg.AtyClassMsg"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.group.AtyClassHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.group.AtyBrowseClassInfo"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.group.AtyClassSearch"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.group.AtyClassRecommend"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.group.AtyClassSettings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.group.AtyClassMemberForLeave"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.group.AtyClassMember"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.group.AtyClassInvite"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.group.AtyClassInviteList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.group.AtyClassInviteDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.group.AtyClassCreateTips"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.group.AtyClassCreate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.msg.AtySystemNotice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.msg.AtyNotice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.contactus.AtyContactUs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.about.AtyAbout"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.about.AtyAboutList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.about.AtyAboutFaq"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.about.AtyAppList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.settings.AtySettings"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.binding.AtyBindingAccount"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.binding.AtyBindingInfos"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.binding.AtyBindingPhone"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.binding.AtyBindingWeChat"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.binding.AtyBindingAlipay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.post.AtyPostEdit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.post.AtyPostDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.component.AtyInterest"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.download.AtyDownload"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.download.AtyDownload2"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.download.AtyDownload2Details"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.component.photograph.AtyPhotoBrowser"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.component.photograph.AtySavePictures"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.shuangge.english.view.component.photograph.AtyPhotograph"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" />
+        <activity
+            android:name="com.shuangge.english.view.lesson.AtyLesson"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.lesson.AtyBoss"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.lesson.AtySuccessResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.lesson.AtyFailResult"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.lesson.AtyType4s"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.lesson.AtyType5s"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.settings.AtyChangePwd"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.game.llk.AtyLLK"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.read.AtyRead"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.read.AtyReadHome"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.read.AtyReadList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.read.AtyReadLesson"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.read.AtyReadQuestion"
+            android:screenOrientation="portrait" />
+        
+         <activity
+            android:name="com.shuangge.english.view.read.AtyReadSuccessResult"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.shuangge.english.view.rewards.AtyRewardsLastweekRank"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.shuangge.english.view.secretmsg.AtySecretFriendList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.secretmsg.AtySecretDetails"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.secretmsg.AtySecretMsgList"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.shuangge.english.view.shop.AtyShopList"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.shuangge.english.view.shop.AtyShopItemDetail"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.shuangge.english.view.shop.AtyShopPurchaseRecords"
+            android:screenOrientation="portrait" />
+        
+        <activity
+            android:name="com.shuangge.english.view.shop.AtyShopConfirmOrder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.shop.AtyShopOrderDetails"
+            android:screenOrientation="portrait" />
+		 <activity
+            android:name="com.shuangge.english.view.shop.AtyShopOrderPay"   
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="wxab78122b71fe5483"/>
+            </intent-filter>
+        </activity>       
+        
+        <activity
+            android:name="com.shuangge.english.view.shop.AtyShippingAddressEdit"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.shop.AtyShopAddressList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.shop.AtyGiveUserList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.rewards.AtyRewardsConfirm"
+            android:screenOrientation="portrait" />
+
+		<receiver android:name="com.shuangge.english.receiver.RegistrationReceiver">  
+		    <intent-filter>  
+		        <action android:name="android.intent.action.BOOT_COMPLETED" />  
+		        <category android:name="android.intent.category.HOME" />  
+		    </intent-filter>  
+		</receiver>
+        
+        <!-- PUSH SDK配置开始 -->
+        <!-- 
+                 <activity
+            android:name="com.shuangge.english.view.date.AtyDate"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.shuangge.english.view.date.AtyDateDetails"
+            android:screenOrientation="portrait" />
+        
+        <receiver
+            android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+            android:exported="false" >
+        </receiver>
+        <receiver android:name="com.umeng.message.RegistrationReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.umeng.message.UmengBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="air.com.shuangge.phone.ShuangEnglish.intent.action.COMMAND" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.RE_ELECTION_V2" />
+            </intent-filter>
+        </receiver>
+        -->
+        
+        <receiver
+		    android:name="com.umeng.message.NotificationProxyBroadcastReceiver"
+		    android:exported="false" >
+		</receiver>
+		
+        <receiver
+		    android:name="com.shuangge.english.support.service.Type4DownLoadService.MyReciver" >
+		</receiver>
+		
+        
+        <service android:name="com.umeng.message.UmengMessageCallbackHandlerService"
+	            android:exported="false">
+	        <intent-filter>
+	            <action android:name="com.umeng.messge.registercallback.action" />
+	        </intent-filter>
+	        <intent-filter>
+	            <action android:name="com.umeng.message.unregistercallback.action"/>
+	        </intent-filter>
+	        <intent-filter>
+	            <action android:name="com.umeng.message.message.handler.action"/>
+	        </intent-filter>
+	        <intent-filter>
+	            <action android:name="com.umeng.message.autoupdate.handler.action"/>
+	        </intent-filter>
+	</service>
+        
+		<receiver
+		    android:name="com.umeng.message.SystemReceiver"
+		    android:process=":push" >
+		    <intent-filter>
+		        <action android:name="android.intent.action.BOOT_COMPLETED" />
+		    </intent-filter>
+		    <intent-filter>
+		        <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+		    </intent-filter>
+		    <intent-filter>
+		        <action android:name="android.intent.action.PACKAGE_REMOVED" />
+		        <data android:scheme="package" />
+		    </intent-filter>
+		</receiver>
+		<receiver
+		    android:name="com.umeng.message.MessageReceiver"
+		    android:process=":push" >
+		    <intent-filter>
+		        <action android:name="org.agoo.android.intent.action.RECEIVE" />
+		    </intent-filter>
+		</receiver>
+		<receiver
+		    android:name="com.umeng.message.ElectionReceiver"
+		    android:process=":push" >
+		    <intent-filter>
+		        <action android:name="org.agoo.android.intent.action.ELECTION_RESULT_V4" />
+		        <category android:name="umeng" />
+		    </intent-filter>
+		</receiver>
+		<receiver
+		    android:name="com.umeng.message.RegistrationReceiver"
+		    android:exported="false" >
+		    <intent-filter>
+		        <action android:name="air.com.shuangge.phone.ShuangEnglish.intent.action.COMMAND" />
+		    </intent-filter>
+		</receiver>
+		<receiver android:name="com.umeng.message.UmengMessageBootReceiver" >
+		    <intent-filter>
+		        <action android:name="android.intent.action.BOOT_COMPLETED" />
+		    </intent-filter>
+		</receiver>
+        
+<!-- 
+        <service
+            android:name="com.umeng.message.UmengService"
+            android:exported="true"
+            android:process=":umengService_v1" >
+            <intent-filter>
+                <action android:name="air.com.shuangge.phone.ShuangEnglish.intent.action.START" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="air.com.shuangge.phone.ShuangEnglish.intent.action.COCKROACH" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.PING" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="org.android.agoo.service.ElectionService"
+            android:exported="true"
+            android:process=":umengService_v1" >
+            <intent-filter>
+                <action android:name="org.agoo.android.intent.action.ELECTION_V2" />
+            </intent-filter>
+        </service>
+        <service android:name="com.umeng.message.UmengIntentService" />
+ -->
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="542534e3fd98c5948a00087a" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="31d6ecbaea349adce6d5ec85edd79450" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_CHANNEL"
+            android:value="HUAWEI" >
+        </meta-data>
+        
+        <service
+		    android:name="com.umeng.message.UmengService"
+		    android:label="PushService"
+		    android:exported="true"
+		    android:process=":push" >
+		    <intent-filter>
+		        <action android:name="air.com.shuangge.phone.ShuangEnglish.intent.action.START" />
+		    </intent-filter>
+		    <intent-filter>
+		        <action android:name="air.com.shuangge.phone.ShuangEnglish.intent.action.COCKROACH" />
+		    </intent-filter>
+		    <intent-filter>
+		        <action android:name="org.agoo.android.intent.action.PING_V4" />
+		    <category android:name="umeng" />
+		    </intent-filter>
+		</service>
+		<service android:name="com.umeng.message.UmengIntentService" 
+		    android:process=":push" />
+		<service 
+		    android:name="com.umeng.message.UmengMessageIntentReceiverService"
+		    android:process=":push" 
+		    android:exported="true" >
+		    <intent-filter>
+		        <action android:name="org.android.agoo.client.MessageReceiverService" />
+		    </intent-filter>
+		    <intent-filter>
+		        <action android:name="org.android.agoo.client.ElectionReceiverService" />
+		    </intent-filter>
+		</service>
+		<!-- V1.3.0添加的service，负责下载通知的资源 -->
+		<service android:name="com.umeng.message.UmengDownloadResourceService" />
+
+        <!-- If you donot want to use the standard notification bar in SDK, you can define IntentService instead to handle message. -->
+        <service android:name="com.shuangge.english.receiver.MyPushIntentService" />
+        <!-- PUSH SDK 配置结束 -->
+
+
+        <!-- ###################注册SDK使用的Activity###################### -->
+        
+        <!-- 分享编辑页 <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>-->
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <!-- 100424468，如果你使用的公用账号，则不需要修改；否则修改成你在QQ开放平台申请的 APP ID -->
+                <data android:scheme="tencent1103428370" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <!-- 微信回调activity -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+         <intent-filter>
+                <action android:name="android.intent.action.VIEW" >
+                </action>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- ###################声明SDK使用的相关权限###################### -->
+        <!-- QQ、QQ空间所需权限 -->
+
+        <activity
+            android:name="com.shuangge.english.view.share.AtyWXEntry"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        
+        
+        
+		
+        <!-- 微信支付 --> 
+        <activity 
+            android:name="air.com.shuangge.phone.ShuangEnglish.wxapi.WXPayEntryActivity"
+			android:exported="true"
+			android:launchMode="singleTop"            
+            />
+        <receiver
+            android:name="com.shuangge.english.support.utils.pay.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+        <!-- 微信支付 -->
+        
+        
+        <!-- 支付宝支付 -->
+        <activity 
+            android:name="com.shuangge.english.view.shop.AtyShopOrderPayZfb"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+             >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+             >
+        </activity>
+        <!-- 支付宝支付 -->
+        
+        
+        <!-- 百度自动更新 -->
+        <meta-data android:name="BDAPPID" android:value="5712708"/>
+        <meta-data android:name="BDAPPKEY" android:value="vZh6lm8OiyIGjGk57WD768mEdGnLLPp5"/>
+        
+        <activity android:name="com.baidu.autoupdatesdk.ConfirmDialoigActivity"
+            android:screenOrientation="sensor"
+            android:exported="false"
+             />
+        
+        <receiver android:name="com.baidu.autoupdatesdk.receiver.BDBroadcastReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.baidu.autoupdatesdk.ACTION_NEW_UPDATE"/>
+                <action android:name="com.baidu.autoupdatesdk.ACTION_DOWNLOAD_COMPLETE"/>
+                <action android:name="com.baidu.autoupdatesdk.ACTION_NEW_AS"/>
+                <action android:name="com.baidu.autoupdatesdk.ACTION_AS_DOWNLOAD_COMPLETE"/>
+            </intent-filter>
+        </receiver>
+		<!-- 百度自动更新 -->
+        
+        <!-- 有关 阅读的文章 -->
+        <activity android:name="com.shuangge.english.view.read.AtyReadFourth"></activity>
+        <activity android:name="com.shuangge.english.view.read.AtyWordList"></activity>
+        <activity android:name="com.shuangge.english.view.read.AtyCoreVocabulary"></activity>
+        <activity android:name="com.shuangge.english.view.read.AtyReadLearnResultTotalResult"></activity>
+        <activity android:name="com.shuangge.english.view.read.AtyReadQuestionCheck" />
+        
+    </application>
+
+</manifest>

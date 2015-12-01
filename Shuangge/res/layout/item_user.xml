@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleImage="http://schemas.android.com/apk/res/air.com.shuangge.phone.ShuangEnglish"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <RelativeLayout
+        style="@style/BtnPostItem"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="5dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" >
+
+        <com.shuangge.english.view.component.CircleImageView
+            android:id="@+id/imgHead"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            CircleImage:circleImage="@drawable/head_male"
+            android:src="@drawable/head_male" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgHead"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imgHead"
+            android:ellipsize="end"
+            android:maxLength="15"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/default_title"
+            android:textSize="18dp" />
+
+        <com.shuangge.english.view.component.ComponentLevel
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtName"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/txtName" />
+
+        <LinearLayout
+            android:id="@+id/ly1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtName"
+            android:layout_below="@+id/txtName"
+            android:layout_marginTop="1dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <ImageView
+                android:id="@+id/imgclassManager"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/icon_class_manager" />
+
+            <ImageView
+                android:id="@+id/imgclassSubManager"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/icon_class_sub_manager" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtAllScore"
+            android:layout_width="55dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtName"
+            android:layout_toRightOf="@+id/txt"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="2dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="1"
+            android:text="1000"
+            android:textColor="@color/default_sub_info"
+            android:textSize="14dp" />
+        
+        <TextView
+            android:id="@+id/txtWeekScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtName"
+            android:layout_toRightOf="@+id/txt1"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="6dp"
+            android:layout_marginLeft="2dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="1"
+            android:text="1000"
+            android:textColor="@color/default_sub_info"
+            android:textSize="14dp" />
+        
+		<TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtName"
+            android:layout_alignLeft="@+id/txtName"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="2dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="1"
+            android:text="总积分:"
+            android:textColor="@color/default_sub_info"
+            android:textSize="14dp" />
+		
+		<TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtName"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/txtAllScore"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="1"
+            android:text="本周积分:"
+            android:textColor="@color/default_sub_info"
+            android:textSize="14dp" />
+		
+        <ImageView
+            android:id="@+id/imageStar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_below="@+id/txtName"
+            android:layout_toRightOf="@+id/imgHead"
+            android:src="@drawable/icon_star"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titlebar="http://schemas.android.com/apk/res/air.com.shuangge.phone.ShuangEnglish"
+    xmlns:tipsEditText="http://schemas.android.com/apk/res/air.com.shuangge.phone.ShuangEnglish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.shuangge.english.view.component.ComponentTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:msgs="true"
+        titlebar:titleStrCn="@string/classSearchTitleCn"
+        titlebar:titleStrEn="@string/classSearchTitleEn" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        android:background="#f5f5f5"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/icon_search" />
+
+        <com.shuangge.english.view.component.EditTextWidthTips
+            android:id="@+id/txtSearch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@null"
+            android:ems="10"
+            android:gravity="left|center"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/default_content"
+            android:textSize="16dp"
+            tipsEditText:tips="@string/classSearchTip"
+            tipsEditText:tipsColor="#b2b2b2" >
+
+            <requestFocus />
+        </com.shuangge.english.view.component.EditTextWidthTips>
+    </LinearLayout>
+
+    <com.handmark.pulltorefresh.library.MyPullToRefreshListView
+        android:id="@+id/pullRefreshList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@color/transparent"
+        android:dividerHeight="0dp"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@color/transparent"
+        android:smoothScrollbar="true" />
+
+</LinearLayout>

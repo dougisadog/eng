@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titlebar="http://schemas.android.com/apk/res/air.com.shuangge.phone.ShuangEnglish"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.shuangge.english.view.component.ComponentTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:titleStrCn=""
+        titlebar:titleStrEn="@string/readQuizTitle"
+        titlebar:titleTheme="2" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center" >
+
+        <ImageView
+            android:id="@+id/correctImage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:src="@drawable/read_test_success" />
+
+        <ScrollView
+            android:id="@+id/questionScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_marginBottom="45dp"
+            android:scrollbars="vertical"
+            android:visibility="gone" >
+
+            <LinearLayout
+                android:id="@+id/llQuestionContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:id="@+id/buttonGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/txtRetry"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/read_btn_selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/readRetryBtn"
+                android:textColor="#66808080"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtExit"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/read_btn_selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/readExitBtn"
+                android:textColor="#66808080"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtNext"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/read_btn_selector"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/readNextBtn"
+                android:textColor="#66808080"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

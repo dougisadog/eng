@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" 
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/txtWordItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="单词" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="#F0F0F0" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="10dp"
+         >
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/txtWordTranslation"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/read_core_words_txt_background"
+            android:gravity="center"
+            android:text="释义"
+            android:textSize="10dp"
+             />
+    </FrameLayout>
+
+</LinearLayout>

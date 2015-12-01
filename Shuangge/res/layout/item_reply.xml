@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jattrs="http://schemas.android.com/apk/res/air.com.shuangge.phone.ShuangEnglish"
+    xmlns:CircleImage="http://schemas.android.com/apk/res/air.com.shuangge.phone.ShuangEnglish"
+    xmlns:f="http://schemas.android.com/apk/res/air.com.shuangge.phone.ShuangEnglish"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f0f0f0"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="20dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" >
+
+        <com.shuangge.english.view.component.CircleImageView
+            android:id="@+id/imgHead"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            CircleImage:circleImage="@drawable/head_male" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imgHead"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="8dp"
+            android:layout_toRightOf="@+id/imgHead"
+            android:background="@drawable/bg_post_bubble"
+            android:paddingBottom="12dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="12dp"
+            android:paddingTop="11dp" >
+
+            <TextView
+                android:id="@+id/txtPostTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="40dp"
+                android:text="标题fsadfs标题fsadfs标题fsadfs标题fsadfs标题fsadfs标题fsadfs标题fsadfs"
+                android:textColor="#4a4a4a"
+                android:textSize="16dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/txtSubTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPostTitle"
+                android:layout_marginBottom="10dp"
+                android:text="回复 19楼 jeffrey:"
+                android:textColor="#4a4a4a"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtSubContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtSubTitle"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/s_bg_border_radio4"
+                android:lineSpacingExtra="4dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingBottom="6dp"
+                android:text="内容内容内容内容内容内容内容内容内容"
+                android:textColor="#7b7b7b"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/txtContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtSubContent"
+                android:lineSpacingExtra="4dp"
+                android:text="内容内容内容内容内容内容内容内容内容"
+                android:textColor="#7b7b7b"
+                android:textSize="14dp" />
+
+            <LinearLayout
+                android:id="@+id/llPicContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtContent"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <com.shuangge.english.view.component.MaskImage
+                        android:id="@+id/img1"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        f:image="@drawable/head_male"
+                        f:imageHeight="80dp"
+                        f:imageWidth="80dp"
+                        f:mask="@drawable/bg_head" />
+
+                    <com.shuangge.english.view.component.MaskImage
+                        android:id="@+id/img2"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="10dp"
+                        jattrs:image="@drawable/head_male"
+                        jattrs:imageHeight="80dp"
+                        jattrs:imageWidth="80dp"
+                        jattrs:mask="@drawable/bg_head" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <com.shuangge.english.view.component.MaskImage
+                        android:id="@+id/img3"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginTop="10dp"
+                        jattrs:image="@drawable/head_male"
+                        jattrs:imageHeight="80dp"
+                        jattrs:imageWidth="80dp"
+                        jattrs:mask="@drawable/bg_head" />
+
+                    <com.shuangge.english.view.component.MaskImage
+                        android:id="@+id/img4"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        jattrs:image="@drawable/head_male"
+                        jattrs:imageHeight="80dp"
+                        jattrs:imageWidth="80dp"
+                        jattrs:mask="@drawable/bg_head" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/llPicContainer"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="0dp"
+                android:ellipsize="end"
+                android:gravity="left|top"
+                android:singleLine="true"
+                android:text="姓名"
+                android:textColor="#acacac"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/txtCreateDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txtName"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/txtName"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="10分钟前 "
+                android:textColor="#acacac"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/txtFloorNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtCreateDate"
+                android:layout_alignBottom="@+id/txtCreateDate"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="楼主"
+                android:textColor="#acacac"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/txtReplyNum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/txtCreateDate"
+                android:layout_alignBottom="@+id/txtCreateDate"
+                android:layout_alignParentRight="true"
+                android:ellipsize="end"
+                android:gravity="right"
+                android:singleLine="true"
+                android:text="441评论"
+                android:textColor="#acacac"
+                android:textSize="12dp" />
+
+            <ImageView
+                android:id="@+id/imgTop"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="0dp"
+                android:src="@drawable/icon_top" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

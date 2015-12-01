@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    
+    <!-- account -->
+    <integer name="inputLoginMin">1</integer>
+    <integer name="inputLoginMax">20</integer>
+    <integer name="inputPasswordMin">6</integer>
+    <integer name="inputPasswordMax">16</integer>
+    <integer name="inputNameMin">1</integer>
+    <integer name="inputNameMax">12</integer>
+    
+    <!-- phone -->
+    <integer name="inputPhoneMax">11</integer>
+    <integer name="inputPhoneTokenMax">4</integer>
+    
+    <!-- post -->
+    <integer name="inputPostTitleMax">40</integer>
+    <integer name="inputPostContentMax">1000</integer>
+    
+    <integer name="inputReplyMax">500</integer>
+    
+    <!-- class -->
+    <integer name="inputClassTitleMax">12</integer>
+    <integer name="inputClassSignatureMax">20</integer>
+    <integer name="inputClassDesMax">200</integer>
+    
+    <dimen name="dividerHeight">1dp</dimen>
+    <dimen name="headBorder">2dp</dimen>
+    <dimen name="sidebar">15sp</dimen>
+    
+    <!-- menu -->
+    <dimen name="shadow_width">15dp</dimen>
+    <dimen name="slidingmenu_offset">40dp</dimen>
+    <dimen name="slidingmenu_width">260dp</dimen>
+    
+    
+    <!-- read -->
+    <dimen name="read_home_iv_width_height">42dp</dimen>
+    <dimen name="read_home_text_size">13dp</dimen>
+    <dimen name="read_home_item_height">115dp</dimen>
+    <dimen name="read_home_text_margintop">10dp</dimen>
+</resources>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="45dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+     android:id="@+id/viewItem" >
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="6"
+        android:padding="5dp"
+         >
+
+        <TextView
+            android:id="@+id/wordItem"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="单词"
+            android:textSize="10dp" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="#EEEEEE" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="14"
+        android:padding="10dp"
+         >
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/wordTranslation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="释义"
+            android:maxLines="2"
+            android:textSize="10dp" 
+            
+            />
+    </FrameLayout>
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="#EEEEEE" />
+
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:padding="5dp"
+         >
+
+        <TextView
+            android:id="@+id/wordMemoryWeights"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="记忆\n权重"
+            android:textSize="10dp" 
+            />
+    </FrameLayout>
+    
+</LinearLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:CircleImage="http://schemas.android.com/apk/res/air.com.shuangge.phone.ShuangEnglish"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/rlRanklistItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f7f7f7"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/txtNo"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="1"
+            android:textColor="#27a69b"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imgNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp" />
+
+        <com.shuangge.english.view.component.CircleImageView
+            android:id="@+id/imgHead1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/txtNo"
+            CircleImage:circleImage="@drawable/head_male"
+            android:src="@drawable/head_male" />
+
+        <com.shuangge.english.view.component.CircleImageView
+            android:id="@+id/imgHead2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/txtNo"
+            CircleImage:circleImage="@drawable/head_male"
+            android:src="@drawable/head_male" />
+
+        <TextView
+            android:id="@+id/txtName1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="80dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="爽友45645fsdafsdaf6"
+            android:textColor="#595959"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txtName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="80dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="爽友45645fsdafasfd6"
+            android:textColor="#828282"
+            android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/txtScore1"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="224545"
+            android:textColor="#8b8b8b"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/txtScore2"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="224545"
+            android:textColor="#bfbfbf"
+            android:textSize="16dp" />
+    </RelativeLayout>
+
+</FrameLayout>

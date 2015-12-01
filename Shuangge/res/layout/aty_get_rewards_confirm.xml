@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titlebar="http://schemas.android.com/apk/res/air.com.shuangge.phone.ShuangEnglish"
+    xmlns:CircleImage="http://schemas.android.com/apk/res/air.com.shuangge.phone.ShuangEnglish"
+    xmlns:tipsEditText="http://schemas.android.com/apk/res/air.com.shuangge.phone.ShuangEnglish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.shuangge.english.view.component.ComponentTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:titleStrCn="@string/reward_confirm_cn"
+        titlebar:titleStrEn="@string/reward_confirm_en"
+        titlebar:titleTheme="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <com.shuangge.english.view.component.CircleImageView
+            android:id="@+id/imgHead"
+            android:layout_width="70dp"
+            android:layout_height="68dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            CircleImage:borderInsideColor="#ffffff"
+            CircleImage:borderThickness="5dp"
+            CircleImage:circleImage="@drawable/head_male"
+            android:src="@drawable/head_male" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp" >
+
+            <FrameLayout
+                android:id="@+id/fl1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp" >
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_input" />
+
+                <com.shuangge.english.view.component.EditTextWidthTips
+                    android:id="@+id/wechat_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@null"
+                    android:digits="0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ@._"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:singleLine="true"
+                    android:text="asd"
+                    android:textColor="#5c5c5c"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    tipsEditText:tips="@string/reward_confirm_wechat_placeholder"
+                    tipsEditText:tipsColor="#b3b3b3"
+                    android:hint="@string/reward_confirm_wechat_placeholder" >
+                    <requestFocus />
+                </com.shuangge.english.view.component.EditTextWidthTips>
+            </FrameLayout>
+
+
+            <kankan.wheel.widget.WheelView
+                android:id="@+id/selector"
+                android:layout_below="@+id/fl1"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/selector"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="7dp"
+                android:text="@string/reward_confirm_tip"
+                android:textColor="@color/dialog_btn_txt"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/txtNewPwdTips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/fl1"
+                android:layout_alignLeft="@+id/fl1"
+                android:layout_alignTop="@+id/fl1"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/forgetAccountTip1"
+                android:textColor="#999"
+                android:textSize="16dp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/get_rewards_btn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/dialog_btn_txt"
+            android:gravity="center"
+            android:text="@string/reward_confirm_cn"
+            android:textColor="@color/white"
+            android:textSize="24dp" />
+        
+        <TextView
+                android:id="@+id/left_scholarship"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="账户余额:  42.00元"
+                android:textColor="@color/dialog_btn_txt"
+                android:textSize="18dp" />
+    </LinearLayout>
+
+</LinearLayout>

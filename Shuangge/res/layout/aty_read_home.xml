@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titlebar="http://schemas.android.com/apk/res/air.com.shuangge.phone.ShuangEnglish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/rlContainer" >
+
+    <com.shuangge.english.view.component.ComponentTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:titleStrCn="@string/readListTitleCn"
+        titlebar:titleStrEn="@string/readListTitleEn"
+        titlebar:titleTheme="2" />
+
+    <FrameLayout
+        android:id="@+id/rl1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/reading_comprehension_click_background" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <ImageView
+                android:id="@+id/ivArticleRead"
+                android:layout_width="@dimen/read_home_iv_width_height"
+                android:layout_height="@dimen/read_home_iv_width_height"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:background="@drawable/read_article_read_iv"
+                android:duplicateParentState="true" />
+
+            <TextView
+                android:id="@+id/tvArticleRead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivArticleRead"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/read_home_text_margintop"
+                android:duplicateParentState="true"
+                android:text="1.文章阅读"
+                android:textColor="@drawable/read_article_read_tv"
+                android:textSize="@dimen/read_home_text_size" />
+            
+             <ImageView
+                android:id="@+id/tvArticleReadLock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvArticleRead"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/read_home_text_margintop"
+                android:duplicateParentState="true"
+                android:background="@drawable/icon_lock" />
+
+            <ImageView
+                android:id="@+id/ivArticleReadNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="28dp"
+                android:background="@drawable/read_home_next_arrow" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/reading_comprehension_click_background" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <ImageView
+                android:id="@+id/ivLearnWords"
+                android:layout_width="@dimen/read_home_iv_width_height"
+                android:layout_height="@dimen/read_home_iv_width_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/read_learn_words_iv"
+                android:duplicateParentState="true" />
+
+            <TextView
+                 android:id="@+id/tvLearnWords"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivLearnWords"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/read_home_text_margintop"
+                android:duplicateParentState="true"
+                android:text="2.单词短语学习"
+                android:textColor="@drawable/read_article_read_tv"
+                android:textSize="@dimen/read_home_text_size" />
+            
+             <ImageView
+                android:id="@+id/tvLearnWordsLock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvLearnWords"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/read_home_text_margintop"
+                android:duplicateParentState="true"
+                android:background="@drawable/icon_lock" />
+            
+
+            <ImageView
+                android:id="@+id/ivLearnWordsNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="28dp"
+                android:background="@drawable/read_home_next_arrow" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/rl3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/reading_comprehension_click_background" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <ImageView
+                android:id="@+id/ivWordsLLK"
+                android:layout_width="@dimen/read_home_iv_width_height"
+                android:layout_height="@dimen/read_home_iv_width_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/read_words_llkl_iv"
+                android:duplicateParentState="true" />
+
+            <TextView
+                android:id="@+id/tvWordsLLK"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivWordsLLK"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/read_home_text_margintop"
+                android:duplicateParentState="true"
+                android:text="3.单词连连看"
+                android:textColor="@drawable/read_article_read_tv"
+                android:textSize="@dimen/read_home_text_size" />
+            
+             <ImageView
+                android:id="@+id/tvWordsLLKLock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvWordsLLK"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/read_home_text_margintop"
+                android:duplicateParentState="true"
+                android:background="@drawable/icon_lock" />
+
+            <ImageView
+                android:id="@+id/ivWordsLLKNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="28dp"
+                android:background="@drawable/read_home_next_arrow" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/rl4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/reading_comprehension_click_background" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <ImageView
+                android:id="@+id/ivReadingComprehension"
+                android:layout_width="@dimen/read_home_iv_width_height"
+                android:layout_height="@dimen/read_home_iv_width_height"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/read_reading_comprehension_iv"
+                android:duplicateParentState="true" />
+
+            <TextView
+                android:id="@+id/tvReadingComprehension"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ivReadingComprehension"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/read_home_text_margintop"
+                android:duplicateParentState="true"
+                android:text="4.阅读理解"
+                android:textColor="@drawable/read_article_read_tv"
+                android:textSize="@dimen/read_home_text_size" />
+            
+             <ImageView
+                android:id="@+id/tvReadingComprehensionLock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tvReadingComprehension"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/read_home_text_margintop"
+                android:duplicateParentState="true"
+                android:background="@drawable/icon_lock" />
+
+            <ImageView
+                android:id="@+id/ivReadingComprehensionNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="28dp"
+                android:background="@drawable/read_home_next_arrow" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</LinearLayout>

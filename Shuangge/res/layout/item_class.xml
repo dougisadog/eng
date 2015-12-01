@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="15dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" >
+
+        <RelativeLayout
+            android:id="@+id/rlCreate"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_green"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/txt5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:text="@string/classCreateTipEn"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/txt5"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@id/txt5"
+                android:gravity="center"
+                android:paddingBottom="2dp"
+                android:text="@string/classCreateTipCn"
+                android:textColor="@color/white"
+                android:textSize="10dp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/imgHead"
+            android:layout_alignTop="@+id/imgHead"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_toRightOf="@+id/imgHead"
+            textS=""
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="s的发实得分群"
+            android:textColor="#333333"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtName"
+            android:layout_below="@+id/txtName"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2dp"
+            android:src="@drawable/icon_wechat" />
+        <TextView
+            android:id="@+id/txtWeChat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtName"
+            android:layout_marginLeft="25dp"
+            android:layout_below="@+id/txtName"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="班长未填写微信号"
+            android:textColor="#969696"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/txtSignature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtName"
+            android:layout_below="@+id/txtWeChat"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="2dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="safdasdfsafsafdasdfsafsafdasdfsafsafdasdfsafsafdasdfsafsafdasdfsafsafdasdfsafsafdasdfsafsafdasdfsafsafdasdfsafsafdasdfsafsafdasdfsafsafdasdfsafsafdasdfsafsafdasdfsafsafdasdfsaf"
+            android:textColor="#969696"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgHead"
+            android:layout_alignLeft="@+id/txtName"
+            android:layout_below="@+id/txtSignature"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal" >
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:src="@drawable/icon_ranklist" />
+
+                <TextView
+                    android:id="@+id/txtRanklist"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageView3"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@+id/imageView3"
+                    android:text="37"
+                    android:textColor="#969696"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_alignTop="@+id/txtRanklist"
+                    android:layout_toRightOf="@+id/txtRanklist"
+                    android:src="@drawable/icon_member" />
+
+                <TextView
+                    android:id="@+id/txtMemberNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageView1"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@+id/imageView1"
+                    android:text="37"
+                    android:textColor="#969696"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/txtScore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageView2"
+                    android:layout_marginLeft="18dp"
+                    android:layout_toRightOf="@+id/imageView2"
+                    android:text="6"
+                    android:textColor="#969696"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_alignTop="@+id/txtMemberNum"
+                    android:layout_toRightOf="@+id/txtMemberNum"
+                    android:src="@drawable/icon_score" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgHead"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/rlCreate"
+            android:src="@drawable/bg_class_home" />
+
+        
+
+    </RelativeLayout>
+
+</FrameLayout>

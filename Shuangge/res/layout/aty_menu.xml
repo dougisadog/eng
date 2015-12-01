@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:jattrs="http://schemas.android.com/apk/res/air.com.shuangge.phone.ShuangEnglish"
+    android:id="@+id/llAllScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <com.shuangge.english.view.component.TitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        jattrs:titleColor="@color/default_green"
+        jattrs:txtTitle="@string/menuTitle" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/btnUserInfo"
+                style="@style/BtnMenuItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp" >
+
+                <com.shuangge.english.view.component.MaskImage
+                    android:id="@+id/imgHead"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    jattrs:image="@drawable/head_male"
+                    jattrs:imageHeight="80dp"
+                    jattrs:imageWidth="80dp"
+                    jattrs:mask="@drawable/bg_head" />
+
+                <TextView
+                    android:id="@+id/txtName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="29dp"
+                    android:layout_marginRight="90dp"
+                    android:layout_toRightOf="@+id/imgHead"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:text="飞翔的珠子412421421421421"
+                    android:textColor="@color/default_content"
+                    android:textSize="20dp" />
+
+                <ImageView
+                    android:id="@+id/imgLv1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/img1"
+                    android:src="@drawable/icon_lv1" />
+
+                <ImageView
+                    android:id="@+id/imgLv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/img1"
+                    android:src="@drawable/icon_lv2" />
+
+                <ImageView
+                    android:id="@+id/imgLv3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/img1"
+                    android:src="@drawable/icon_lv3" />
+
+                <ImageView
+                    android:id="@+id/imgLv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/img1"
+                    android:src="@drawable/icon_lv4" />
+
+                <ImageView
+                    android:id="@+id/imgLv5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/img1"
+                    android:src="@drawable/icon_lv5" />
+
+                <ImageView
+                    android:id="@+id/imgLv6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/img1"
+                    android:src="@drawable/icon_lv6" />
+
+                <ImageView
+                    android:id="@+id/img1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/transparent"
+                    android:src="@drawable/btn_menu_more" />
+
+                <TextView
+                    android:id="@+id/txtBindAccount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="29dp"
+                    android:layout_toRightOf="@+id/imgHead"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="点击修改账号"
+                    android:textColor="@color/red"
+                    android:textSize="12dp" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_menu_item"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rlPersonalRanklist"
+                    style="@style/BtnMenuItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+
+                    <ImageView
+                        android:id="@+id/icon2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14dp"
+                        android:background="@color/transparent"
+                        android:src="@drawable/icon_menu_item2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:layout_toRightOf="@+id/icon2"
+                        android:background="@drawable/s_border_bottom"
+                        android:gravity="center_vertical"
+                        android:text="@string/menuItem2"
+                        android:textColor="#4a4a4a" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/transparent"
+                        android:src="@drawable/btn_menu_more" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlSysNotice"
+                    style="@style/BtnMenuItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+
+                    <ImageView
+                        android:id="@+id/icon3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/transparent"
+                        android:src="@drawable/icon_menu_item3" />
+
+                    <ImageView
+                        android:id="@+id/icon3WitdhMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@color/transparent"
+                        android:src="@drawable/icon_menu_item3_2"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="54dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/menuItem3"
+                        android:textColor="#4a4a4a" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/transparent"
+                        android:src="@drawable/btn_menu_more" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_menu_item"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rlSet"
+                    style="@style/BtnMenuItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+
+                    <ImageView
+                        android:id="@+id/icon4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="14dp"
+                        android:background="@color/transparent"
+                        android:src="@drawable/icon_menu_item4" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="23dp"
+                        android:layout_toRightOf="@+id/icon4"
+                        android:background="@drawable/s_border_bottom"
+                        android:gravity="center_vertical"
+                        android:text="@string/menuItem4"
+                        android:textColor="#4a4a4a" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/transparent"
+                        android:src="@drawable/btn_menu_more" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlBindAccount"
+                    style="@style/BtnMenuItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+
+                    <ImageView
+                        android:id="@+id/icon5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="16dp"
+                        android:background="@color/transparent"
+                        android:src="@drawable/icon_menu_item5" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="26dp"
+                        android:layout_toRightOf="@+id/icon5"
+                        android:background="@drawable/s_border_bottom"
+                        android:gravity="center_vertical"
+                        android:text="@string/menuItem5"
+                        android:textColor="#4a4a4a" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/transparent"
+                        android:src="@drawable/btn_menu_more" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlDownload"
+                    style="@style/BtnMenuItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+
+                    <ImageView
+                        android:id="@+id/icon6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/transparent"
+                        android:src="@drawable/icon_menu_item6" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="26dp"
+                        android:layout_toRightOf="@+id/icon6"
+                        android:gravity="center_vertical"
+                        android:text="@string/menuItem6"
+                        android:textColor="#4a4a4a" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/transparent"
+                        android:src="@drawable/btn_menu_more" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/bg_menu_item"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/rlContactUs"
+                    style="@style/BtnMenuItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+
+                    <ImageView
+                        android:id="@+id/icon7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="13dp"
+                        android:background="@color/transparent"
+                        android:src="@drawable/icon_menu_item7" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:layout_toRightOf="@+id/icon7"
+                        android:background="@drawable/s_border_bottom"
+                        android:gravity="center_vertical"
+                        android:text="@string/menuItem7"
+                        android:textColor="#4a4a4a" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/transparent"
+                        android:src="@drawable/btn_menu_more" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlAbout"
+                    style="@style/BtnMenuItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp" >
+
+                    <ImageView
+                        android:id="@+id/icon8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/transparent"
+                        android:src="@drawable/icon_menu_item8" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="25dp"
+                        android:layout_toRightOf="@+id/icon8"
+                        android:gravity="center_vertical"
+                        android:text="@string/menuItem8"
+                        android:textColor="#4a4a4a" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/transparent"
+                        android:src="@drawable/btn_menu_more" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtQuit"
+                style="@style/BtnRed"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="@string/menuItem9"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

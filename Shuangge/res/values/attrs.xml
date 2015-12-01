@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="jattrs">
+        <attr name="image" format="reference" />
+        <attr name="mask" format="reference" />
+        <attr name="imageWidth" format="dimension" />
+        <attr name="imageHeight" format="dimension" />
+        <attr name="txtTitle" format="string" />
+        <attr name="titleColor" format="color" />
+        <attr name="spinnerTitleDataId" format="reference" />
+        <attr name="txtDo" format="string" />
+        <attr name="doColor" format="color" />
+    </declare-styleable>
+    
+    <declare-styleable name="CircleImage">
+        <attr name="circleImage" format="reference" />
+        <attr name="borderThickness" format="dimension" />
+        <attr name="borderOutsideColor" format="color" />
+        <attr name="borderInsideColor" format="color" />
+    </declare-styleable>
+    
+    <declare-styleable name="TitleBar">
+        <attr name="titleStrEn" format="string" />
+        <attr name="titleStrCn" format="string" />
+        <attr name="settings" format="boolean" />
+        <attr name="msgs" format="boolean" />
+        <attr name="edit" format="boolean" />
+        <attr name="save" format="boolean" />
+        <attr name="quit" format="boolean" />
+        <attr name="delete" format="boolean" />
+        <attr name="btnText" format="boolean" />
+        <attr name="titleTheme" format="integer" />
+    </declare-styleable>
+    
+    <declare-styleable name="MultiSwitch">
+        <attr name="multiSwitchOptions" format="reference" />
+        <attr name="multiSwitchBg" format="reference" />
+        <attr name="multiSwitchSelected" format="reference" />
+        <attr name="multiSwitchMargin" format="dimension" />
+        <attr name="multiSwitchSelectedColor" format="color" />
+        <attr name="multiSwitchSelectedSize" format="integer" />
+        <attr name="multiSwitchUnSelectedColor" format="color" />
+        <attr name="multiSwitchUnSelectedSize" format="integer" />
+    </declare-styleable>
+    
+    <declare-styleable name="tipsEditText">
+        <attr name="tips" format="string" />
+        <attr name="tipsColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="flowLayout">
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="flowLayoutParams">
+        <attr name="layout_breakLine" format="boolean" />
+        <attr name="layout_horizontalSpacing" format="dimension" />
+    </declare-styleable>
+
+    <!-- used to set the minTextSize via xml -->
+    <attr name="autoScaleTextViewStyle" format="reference" />
+
+    <declare-styleable name="AutoScaleTextView">
+        <attr name="minTextSize" format="dimension" />
+    </declare-styleable>
+    
+    <!-- used to set the minTextSize via xml -->
+    <declare-styleable name="RatingBarView">
+        <attr name="starImageSize" format="dimension" />
+        <attr name="starNum" format="integer" />
+        <attr name="starCount" format="integer" />
+        <attr name="starEmpty" format="reference" />
+        <attr name="starFill" format="reference" />
+        <attr name="starSpacing" format="dimension" />
+    </declare-styleable>
+    
+
+</resources>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:titlebar="http://schemas.android.com/apk/res/air.com.shuangge.phone.ShuangEnglish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7"
+    android:orientation="vertical" >
+
+    <com.shuangge.english.view.component.ComponentTitleBar
+        android:id="@+id/titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        titlebar:titleStrCn="@string/downloadTitleCn"
+        titlebar:titleStrEn="@string/downloadTitleEn"
+        titlebar:titleTheme="1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="35dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false" >
+
+        <ImageView
+            android:id="@+id/imgIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/icon_m0_2" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/imgIcon"
+            android:layout_alignTop="@+id/imgIcon"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/imgIcon"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="初级"
+            android:textColor="#737373"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtLessonNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtName"
+            android:layout_below="@+id/txtName"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="20 lessons"
+            android:textColor="#a8a8a8"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/txtDownloadAll"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/txtLessonNum"
+            android:layout_below="@+id/txtLessonNum"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/btn_green3"
+            android:gravity="center"
+            android:text="@string/downloadTip8"
+            android:textColor="@color/white"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtFinish"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/txtLessonNum"
+            android:layout_below="@+id/txtLessonNum"
+            android:layout_marginTop="3dp"
+            android:gravity="left|center"
+            android:text="@string/finishEn"
+            android:textColor="#b5b5b5"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/txtCancel"
+            android:layout_width="110dp"
+            android:layout_height="30dp"
+            android:layout_alignLeft="@+id/txtLessonNum"
+            android:layout_below="@+id/txtLessonNum"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="@string/cancelEn"
+            android:textColor="#b5b5b5"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/pbDownloadAll"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/txtLessonNum"
+            android:layout_below="@+id/txtLessonNum"
+            android:layout_marginTop="25dp"
+            android:indeterminateOnly="false"
+            android:max="100"
+            android:orientation="horizontal"
+            android:progress="0"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lvDownloads"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#f7f7f7"
+        android:cacheColorHint="@color/transparent"
+        android:listSelector="@color/transparent"
+        android:divider="#dbdbdb"
+        android:dividerHeight="0px" >
+    </ListView>
+
+</LinearLayout>
